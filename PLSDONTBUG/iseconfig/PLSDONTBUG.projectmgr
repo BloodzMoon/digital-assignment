@@ -19,13 +19,13 @@
          <ClosedNode>/numpad R:|digital-assignment|PLSDONTBUG|numpad.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>clockdivTO50 - Behavioral (R:/digital-assignment/PLSDONTBUG/clockdivTO50.vhd)</SelectedItem>
+         <SelectedItem>main (R:/digital-assignment/PLSDONTBUG/main.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000177000000020000000000000000000000000200000064ffffffff000000810000000300000002000001770000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>clockdivTO50 - Behavioral (R:/digital-assignment/PLSDONTBUG/clockdivTO50.vhd)</CurrentItem>
+      <CurrentItem>main (R:/digital-assignment/PLSDONTBUG/main.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -33,13 +33,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000010f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>

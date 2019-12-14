@@ -23,8 +23,12 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ENTERPASS.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="INCORRECT.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SCAN.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SCAN.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="UNLOCK.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="clockdivTO1.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="clockdivTO1.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="clockdivTO50.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="clockdivTO50.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="compare16.sym" xil_pn:origination="imported"/>
@@ -60,18 +64,11 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="SCAN.vf"/>
-      <outfile xil_pn:name="compare16.vf"/>
-      <outfile xil_pn:name="counter3.vf"/>
-      <outfile xil_pn:name="decoder2to4.vf"/>
-      <outfile xil_pn:name="decoder3to4.vf"/>
-      <outfile xil_pn:name="main.vf"/>
-      <outfile xil_pn:name="memo.vf"/>
-      <outfile xil_pn:name="memo4.vf"/>
-      <outfile xil_pn:name="numBCD.vf"/>
-      <outfile xil_pn:name="numbuf.vf"/>
-      <outfile xil_pn:name="numpad.vf"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1576347990" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2741413463335156534" xil_pn:start_ts="1576347990">
       <status xil_pn:value="SuccessfullyRun"/>

@@ -19,8 +19,7 @@
         <signal name="Dout(7:4)" />
         <signal name="Dout(3:0)" />
         <signal name="XLXN_18" />
-        <signal name="mode(2:0)" />
-        <signal name="mode(2)" />
+        <signal name="mode(1:0)" />
         <signal name="mode(1)" />
         <signal name="mode(0)" />
         <signal name="CLR" />
@@ -30,7 +29,7 @@
         <port polarity="Input" name="CLK20Mhz" />
         <port polarity="Input" name="Data(3:0)" />
         <port polarity="Output" name="Dout(15:0)" />
-        <port polarity="Output" name="mode(2:0)" />
+        <port polarity="Output" name="mode(1:0)" />
         <port polarity="Input" name="CLR" />
         <port polarity="Output" name="END" />
         <blockdef name="memo4">
@@ -130,10 +129,6 @@
         </block>
         <block symbolname="inv" name="XLXI_6">
             <blockpin signalname="XLXN_18" name="I" />
-            <blockpin signalname="mode(2)" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_7">
-            <blockpin signalname="XLXN_18" name="I" />
             <blockpin signalname="mode(1)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_8">
@@ -215,38 +210,20 @@
             <wire x2="2288" y1="1088" y2="1088" x1="2224" />
             <wire x2="2304" y1="1088" y2="1088" x1="2288" />
         </branch>
-        <branch name="XLXN_18">
-            <wire x2="1104" y1="960" y2="960" x1="1040" />
-            <wire x2="1104" y1="960" y2="1328" x1="1104" />
-            <wire x2="1104" y1="1328" y2="1392" x1="1104" />
-            <wire x2="1840" y1="1392" y2="1392" x1="1104" />
-            <wire x2="1104" y1="1392" y2="1456" x1="1104" />
-            <wire x2="1840" y1="1456" y2="1456" x1="1104" />
-            <wire x2="1104" y1="1456" y2="1632" x1="1104" />
-            <wire x2="1840" y1="1632" y2="1632" x1="1104" />
-            <wire x2="1840" y1="1328" y2="1328" x1="1104" />
-        </branch>
-        <instance x="1840" y="1424" name="XLXI_7" orien="R0" />
         <instance x="1840" y="1488" name="XLXI_8" orien="R0" />
         <instance x="1840" y="1360" name="XLXI_6" orien="R0" />
-        <branch name="mode(2:0)">
+        <branch name="mode(1:0)">
             <wire x2="2240" y1="1328" y2="1392" x1="2240" />
             <wire x2="2240" y1="1392" y2="1456" x1="2240" />
             <wire x2="2368" y1="1392" y2="1392" x1="2240" />
         </branch>
-        <iomarker fontsize="28" x="2368" y="1392" name="mode(2:0)" orien="R0" />
+        <iomarker fontsize="28" x="2368" y="1392" name="mode(1:0)" orien="R0" />
         <bustap x2="2144" y1="1328" y2="1328" x1="2240" />
-        <bustap x2="2144" y1="1392" y2="1392" x1="2240" />
         <bustap x2="2144" y1="1456" y2="1456" x1="2240" />
-        <branch name="mode(2)">
+        <branch name="mode(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1328" type="branch" />
             <wire x2="2080" y1="1328" y2="1328" x1="2064" />
             <wire x2="2144" y1="1328" y2="1328" x1="2080" />
-        </branch>
-        <branch name="mode(1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1392" type="branch" />
-            <wire x2="2080" y1="1392" y2="1392" x1="2064" />
-            <wire x2="2144" y1="1392" y2="1392" x1="2080" />
         </branch>
         <branch name="mode(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1456" type="branch" />
@@ -266,5 +243,14 @@
             <wire x2="2096" y1="1632" y2="1632" x1="2064" />
         </branch>
         <iomarker fontsize="28" x="2096" y="1632" name="END" orien="R0" />
+        <branch name="XLXN_18">
+            <wire x2="1104" y1="960" y2="960" x1="1040" />
+            <wire x2="1104" y1="960" y2="1328" x1="1104" />
+            <wire x2="1840" y1="1328" y2="1328" x1="1104" />
+            <wire x2="1104" y1="1328" y2="1456" x1="1104" />
+            <wire x2="1840" y1="1456" y2="1456" x1="1104" />
+            <wire x2="1104" y1="1456" y2="1632" x1="1104" />
+            <wire x2="1840" y1="1632" y2="1632" x1="1104" />
+        </branch>
     </sheet>
 </drawing>
