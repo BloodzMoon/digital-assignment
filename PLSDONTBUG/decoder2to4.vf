@@ -1,0 +1,62 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : decoder2to4.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/decoder2to4.vf -w R:/digital-assignment/PLSDONTBUG/decoder2to4.sch
+//Design Name: decoder2to4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module decoder2to4(c0, 
+                   c1, 
+                   o0, 
+                   o1, 
+                   o2, 
+                   o3);
+
+    input c0;
+    input c1;
+   output o0;
+   output o1;
+   output o2;
+   output o3;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   AND2  XLXI_13 (.I0(XLXN_14), 
+                 .I1(XLXN_13), 
+                 .O(o0));
+   AND2  XLXI_14 (.I0(c0), 
+                 .I1(XLXN_15), 
+                 .O(o1));
+   AND2  XLXI_16 (.I0(XLXN_16), 
+                 .I1(c1), 
+                 .O(o2));
+   AND2  XLXI_17 (.I0(c0), 
+                 .I1(c1), 
+                 .O(o3));
+   INV  XLXI_18 (.I(c1), 
+                .O(XLXN_13));
+   INV  XLXI_19 (.I(c0), 
+                .O(XLXN_14));
+   INV  XLXI_20 (.I(c1), 
+                .O(XLXN_15));
+   INV  XLXI_21 (.I(c0), 
+                .O(XLXN_16));
+endmodule

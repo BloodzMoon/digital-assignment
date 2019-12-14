@@ -1,0 +1,2 @@
+vhdtdtfi -lib work counterTO5.vhd -prj PLSDONTBUG -o counterTO5.spl -module counterTO5 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w counterTO5.spl R:/digital-assignment/PLSDONTBUG/counterTO5.sym 

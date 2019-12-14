@@ -1,0 +1,141 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : compare16.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/compare16.vf -w R:/digital-assignment/PLSDONTBUG/compare16.sch
+//Design Name: compare16
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module AND16_HXILINX_compare16 (O, I0, I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11, I12, I13, I14, I15);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+   input I8;
+   input I9;
+   input I10;
+   input I11;
+   input I12;
+   input I13;
+   input I14;
+   input I15;
+
+assign O = I0 && I1 && I2 && I3 && I4 && I5 && I6 && I7 && I8 && I9 && I10 && I11 && I12 && I13 && I14 && I15 ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module compare16(D1, 
+                 D2, 
+                 OUTPUT);
+
+    input [15:0] D1;
+    input [15:0] D2;
+   output OUTPUT;
+   
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_52;
+   wire XLXN_53;
+   wire XLXN_54;
+   wire XLXN_56;
+   wire XLXN_57;
+   wire XLXN_58;
+   wire XLXN_59;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_63;
+   wire XLXN_64;
+   
+   XNOR2  XLXI_69 (.I0(D2[15]), 
+                  .I1(D1[15]), 
+                  .O(XLXN_56));
+   XNOR2  XLXI_70 (.I0(D2[14]), 
+                  .I1(D1[14]), 
+                  .O(XLXN_57));
+   XNOR2  XLXI_71 (.I0(D2[13]), 
+                  .I1(D1[13]), 
+                  .O(XLXN_58));
+   XNOR2  XLXI_72 (.I0(D2[12]), 
+                  .I1(D1[12]), 
+                  .O(XLXN_59));
+   XNOR2  XLXI_73 (.I0(D2[11]), 
+                  .I1(D1[11]), 
+                  .O(XLXN_64));
+   XNOR2  XLXI_74 (.I0(D2[10]), 
+                  .I1(D1[10]), 
+                  .O(XLXN_63));
+   XNOR2  XLXI_75 (.I0(D2[9]), 
+                  .I1(D1[9]), 
+                  .O(XLXN_61));
+   XNOR2  XLXI_76 (.I0(D2[8]), 
+                  .I1(D1[8]), 
+                  .O(XLXN_60));
+   XNOR2  XLXI_77 (.I0(D2[7]), 
+                  .I1(D1[7]), 
+                  .O(XLXN_47));
+   XNOR2  XLXI_78 (.I0(D2[6]), 
+                  .I1(D1[6]), 
+                  .O(XLXN_48));
+   XNOR2  XLXI_79 (.I0(D2[5]), 
+                  .I1(D1[5]), 
+                  .O(XLXN_49));
+   XNOR2  XLXI_80 (.I0(D2[4]), 
+                  .I1(D1[4]), 
+                  .O(XLXN_50));
+   XNOR2  XLXI_81 (.I0(D2[3]), 
+                  .I1(D1[3]), 
+                  .O(XLXN_54));
+   XNOR2  XLXI_82 (.I0(D2[2]), 
+                  .I1(D1[2]), 
+                  .O(XLXN_53));
+   XNOR2  XLXI_83 (.I0(D2[1]), 
+                  .I1(D1[1]), 
+                  .O(XLXN_52));
+   XNOR2  XLXI_84 (.I0(D2[0]), 
+                  .I1(D1[0]), 
+                  .O(XLXN_51));
+   (* HU_SET = "XLXI_85_5" *) 
+   AND16_HXILINX_compare16  XLXI_85 (.I0(XLXN_51), 
+                                    .I1(XLXN_52), 
+                                    .I2(XLXN_53), 
+                                    .I3(XLXN_54), 
+                                    .I4(XLXN_60), 
+                                    .I5(XLXN_61), 
+                                    .I6(XLXN_63), 
+                                    .I7(XLXN_64), 
+                                    .I8(XLXN_59), 
+                                    .I9(XLXN_58), 
+                                    .I10(XLXN_57), 
+                                    .I11(XLXN_56), 
+                                    .I12(XLXN_50), 
+                                    .I13(XLXN_49), 
+                                    .I14(XLXN_48), 
+                                    .I15(XLXN_47), 
+                                    .O(OUTPUT));
+endmodule

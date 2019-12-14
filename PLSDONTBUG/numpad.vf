@@ -1,0 +1,180 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : numpad.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/numpad.vf -w R:/digital-assignment/PLSDONTBUG/numpad.sch
+//Design Name: numpad
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_numpad(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module decoder2to4_MUSER_numpad(c0, 
+                                c1, 
+                                o0, 
+                                o1, 
+                                o2, 
+                                o3);
+
+    input c0;
+    input c1;
+   output o0;
+   output o1;
+   output o2;
+   output o3;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   AND2  XLXI_13 (.I0(XLXN_14), 
+                 .I1(XLXN_13), 
+                 .O(o0));
+   AND2  XLXI_14 (.I0(c0), 
+                 .I1(XLXN_15), 
+                 .O(o1));
+   AND2  XLXI_16 (.I0(XLXN_16), 
+                 .I1(c1), 
+                 .O(o2));
+   AND2  XLXI_17 (.I0(c0), 
+                 .I1(c1), 
+                 .O(o3));
+   INV  XLXI_18 (.I(c1), 
+                .O(XLXN_13));
+   INV  XLXI_19 (.I(c0), 
+                .O(XLXN_14));
+   INV  XLXI_20 (.I(c1), 
+                .O(XLXN_15));
+   INV  XLXI_21 (.I(c0), 
+                .O(XLXN_16));
+endmodule
+`timescale 1ns / 1ps
+
+module counter3_MUSER_numpad(CLK, 
+                             CLR, 
+                             bit0, 
+                             bit1);
+
+    input CLK;
+    input CLR;
+   output bit0;
+   output bit1;
+   
+   wire XLXN_9;
+   wire bit1_DUMMY;
+   
+   assign bit1 = bit1_DUMMY;
+   (* HU_SET = "XLXI_1_6" *) 
+   FJKC_HXILINX_numpad  XLXI_1 (.C(CLK), 
+                               .CLR(CLR), 
+                               .J(bit1_DUMMY), 
+                               .K(bit1_DUMMY), 
+                               .Q(bit0));
+   (* HU_SET = "XLXI_2_7" *) 
+   FJKC_HXILINX_numpad  XLXI_2 (.C(CLK), 
+                               .CLR(CLR), 
+                               .J(XLXN_9), 
+                               .K(XLXN_9), 
+                               .Q(bit1_DUMMY));
+   VCC  XLXI_3 (.P(XLXN_9));
+endmodule
+`timescale 1ns / 1ps
+
+module numpad(CLK20MHz, 
+              numIN, 
+              C, 
+              isPressed, 
+              R);
+
+    input CLK20MHz;
+    input [3:0] numIN;
+   output [3:0] C;
+   output isPressed;
+   output [3:0] R;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_18;
+   wire isPressed_DUMMY;
+   
+   assign isPressed = isPressed_DUMMY;
+   OR4  XLXI_4 (.I0(numIN[3]), 
+               .I1(numIN[2]), 
+               .I2(numIN[1]), 
+               .I3(numIN[0]), 
+               .O(isPressed_DUMMY));
+   AND2B1  XLXI_5 (.I0(isPressed_DUMMY), 
+                  .I1(CLK20MHz), 
+                  .O(XLXN_18));
+   FD #( .INIT(1'b0) ) XLXI_69 (.C(CLK20MHz), 
+               .D(numIN[0]), 
+               .Q(C[0]));
+   FD #( .INIT(1'b0) ) XLXI_79 (.C(CLK20MHz), 
+               .D(numIN[1]), 
+               .Q(C[1]));
+   FD #( .INIT(1'b0) ) XLXI_80 (.C(CLK20MHz), 
+               .D(numIN[3]), 
+               .Q(C[3]));
+   FD #( .INIT(1'b0) ) XLXI_81 (.C(CLK20MHz), 
+               .D(numIN[2]), 
+               .Q(C[2]));
+   counter3_MUSER_numpad  XLXI_82 (.CLK(XLXN_18), 
+                                  .CLR(), 
+                                  .bit0(XLXN_1), 
+                                  .bit1(XLXN_2));
+   decoder2to4_MUSER_numpad  XLXI_83 (.c0(XLXN_1), 
+                                     .c1(XLXN_2), 
+                                     .o0(R[0]), 
+                                     .o1(R[1]), 
+                                     .o2(R[2]), 
+                                     .o3(R[3]));
+endmodule

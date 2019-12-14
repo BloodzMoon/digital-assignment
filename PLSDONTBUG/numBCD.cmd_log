@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym numBCD R:/digital-assignment/PLSDONTBUG/numBCD.sch R:/digital-assignment/PLSDONTBUG/numBCD.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym numBCD R:/digital-assignment/PLSDONTBUG/numBCD.sch R:/digital-assignment/PLSDONTBUG/numBCD.sym 

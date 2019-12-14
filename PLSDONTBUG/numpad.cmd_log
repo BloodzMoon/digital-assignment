@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym numpad R:/digital-assignment/PLSDONTBUG/numpad.sch R:/digital-assignment/PLSDONTBUG/numpad.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym numpad R:/digital-assignment/PLSDONTBUG/numpad.sch R:/digital-assignment/PLSDONTBUG/numpad.sym 

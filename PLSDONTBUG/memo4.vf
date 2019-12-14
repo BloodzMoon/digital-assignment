@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : memo4.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/memo4.vf -w R:/digital-assignment/PLSDONTBUG/memo4.sch
+//Design Name: memo4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module memo_MUSER_memo4(C, 
+                        CLR, 
+                        EN, 
+                        P, 
+                        Q);
+
+    input C;
+    input CLR;
+    input EN;
+    input [3:0] P;
+   output [3:0] Q;
+   
+   wire XLXN_28;
+   
+   FDC  XLXI_1 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[3]), 
+               .Q(Q[3]));
+   FDC  XLXI_2 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[2]), 
+               .Q(Q[2]));
+   FDC  XLXI_3 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[1]), 
+               .Q(Q[1]));
+   FDC  XLXI_4 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[0]), 
+               .Q(Q[0]));
+   AND2  XLXI_6 (.I0(C), 
+                .I1(EN), 
+                .O(XLXN_28));
+endmodule
+`timescale 1ns / 1ps
+
+module memo4(C, 
+             CLR, 
+             P, 
+             SEL, 
+             Q0, 
+             Q1, 
+             Q2, 
+             Q3);
+
+    input C;
+    input CLR;
+    input [3:0] P;
+    input [3:0] SEL;
+   output [3:0] Q0;
+   output [3:0] Q1;
+   output [3:0] Q2;
+   output [3:0] Q3;
+   
+   
+   memo_MUSER_memo4  XLXI_1 (.C(C), 
+                            .CLR(CLR), 
+                            .EN(SEL[3]), 
+                            .P(P[3:0]), 
+                            .Q(Q3[3:0]));
+   memo_MUSER_memo4  XLXI_2 (.C(C), 
+                            .CLR(CLR), 
+                            .EN(SEL[2]), 
+                            .P(P[3:0]), 
+                            .Q(Q2[3:0]));
+   memo_MUSER_memo4  XLXI_5 (.C(C), 
+                            .CLR(CLR), 
+                            .EN(SEL[1]), 
+                            .P(P[3:0]), 
+                            .Q(Q1[3:0]));
+   memo_MUSER_memo4  XLXI_6 (.C(C), 
+                            .CLR(CLR), 
+                            .EN(SEL[0]), 
+                            .P(P[3:0]), 
+                            .Q(Q0[3:0]));
+endmodule

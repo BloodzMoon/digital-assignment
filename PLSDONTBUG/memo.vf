@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : memo.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/memo.vf -w R:/digital-assignment/PLSDONTBUG/memo.sch
+//Design Name: memo
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module memo(C, 
+            CLR, 
+            EN, 
+            P, 
+            Q);
+
+    input C;
+    input CLR;
+    input EN;
+    input [3:0] P;
+   output [3:0] Q;
+   
+   wire XLXN_28;
+   
+   FDC  XLXI_1 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[3]), 
+               .Q(Q[3]));
+   FDC  XLXI_2 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[2]), 
+               .Q(Q[2]));
+   FDC  XLXI_3 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[1]), 
+               .Q(Q[1]));
+   FDC  XLXI_4 (.C(XLXN_28), 
+               .CLR(CLR), 
+               .D(P[0]), 
+               .Q(Q[0]));
+   AND2  XLXI_6 (.I0(C), 
+                .I1(EN), 
+                .O(XLXN_28));
+endmodule

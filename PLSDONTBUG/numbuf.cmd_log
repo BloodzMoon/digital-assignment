@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym numbuf R:/digital-assignment/PLSDONTBUG/numbuf.sch R:/digital-assignment/PLSDONTBUG/numbuf.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym numbuf R:/digital-assignment/PLSDONTBUG/numbuf.sch R:/digital-assignment/PLSDONTBUG/numbuf.sym 

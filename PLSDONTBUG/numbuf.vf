@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : numbuf.vf
+// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/numbuf.vf -w R:/digital-assignment/PLSDONTBUG/numbuf.sch
+//Design Name: numbuf
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module numbuf(C, 
+              CLK20Mhz, 
+              pressed, 
+              R, 
+              Col, 
+              Row);
+
+    input [3:0] C;
+    input CLK20Mhz;
+    input pressed;
+    input [3:0] R;
+   output [3:0] Col;
+   output [3:0] Row;
+   
+   wire XLXN_32;
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(XLXN_32), 
+              .D(R[0]), 
+              .Q(Row[0]));
+   FD #( .INIT(1'b0) ) XLXI_9 (.C(XLXN_32), 
+              .D(R[1]), 
+              .Q(Row[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(XLXN_32), 
+               .D(R[3]), 
+               .Q(Row[3]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(XLXN_32), 
+               .D(R[2]), 
+               .Q(Row[2]));
+   FD #( .INIT(1'b0) ) XLXI_47 (.C(XLXN_32), 
+               .D(C[0]), 
+               .Q(Col[0]));
+   FD #( .INIT(1'b0) ) XLXI_48 (.C(XLXN_32), 
+               .D(C[1]), 
+               .Q(Col[1]));
+   FD #( .INIT(1'b0) ) XLXI_49 (.C(XLXN_32), 
+               .D(C[2]), 
+               .Q(Col[2]));
+   FD #( .INIT(1'b0) ) XLXI_50 (.C(XLXN_32), 
+               .D(C[3]), 
+               .Q(Col[3]));
+   AND2  XLXI_52 (.I0(pressed), 
+                 .I1(CLK20Mhz), 
+                 .O(XLXN_32));
+endmodule

@@ -24,13 +24,67 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ENTERPASS.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SCAN.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SCAN.vf"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="clockdivTO50.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="clockdivTO50.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="compare16.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="compare16.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="counter3.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="counter3.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="counterTO4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="counterTO5.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="counterTO5.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="decoder2to4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="decoder2to4.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="decoder3to4.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="decoder3to4.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="main.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="memo.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="memo4.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="modeDecoder.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="numBCD.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="numBCD.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="numbuf.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="numbuf.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="numpad.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="numpad.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="stardecoder.sym" xil_pn:origination="imported"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1576347985" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1576347985">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1576347990" xil_pn:in_ck="9193285454460792109" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2707153689032373741" xil_pn:start_ts="1576347985">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="SCAN.vf"/>
+      <outfile xil_pn:name="compare16.vf"/>
+      <outfile xil_pn:name="counter3.vf"/>
+      <outfile xil_pn:name="decoder2to4.vf"/>
+      <outfile xil_pn:name="decoder3to4.vf"/>
+      <outfile xil_pn:name="main.vf"/>
+      <outfile xil_pn:name="memo.vf"/>
+      <outfile xil_pn:name="memo4.vf"/>
+      <outfile xil_pn:name="numBCD.vf"/>
+      <outfile xil_pn:name="numbuf.vf"/>
+      <outfile xil_pn:name="numpad.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1576347990" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2741413463335156534" xil_pn:start_ts="1576347990">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1576347990" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1576347990">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1576347990" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3171856766572972907" xil_pn:start_ts="1576347990">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -1,7 +1,13 @@
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo.vf,-w,R:/digital-assignment/PLSDONTBUG/memo.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/ENTERPASS.vf,-w,R:/digital-assignment/PLSDONTBUG/ENTERPASS.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/decoder3to4.vf,-w,R:/digital-assignment/PLSDONTBUG/decoder3to4.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/ENTERPASS.vf,-w,R:/digital-assignment/PLSDONTBUG/ENTERPASS.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/main.vf,-w,R:/digital-assignment/PLSDONTBUG/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/modeDecoder.vf,-w,R:/digital-assignment/PLSDONTBUG/modeDecoder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/SCAN.vf,-w,R:/digital-assignment/PLSDONTBUG/SCAN.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/numBCD.vf,-w,R:/digital-assignment/PLSDONTBUG/numBCD.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/decoder2to4.vf,-w,R:/digital-assignment/PLSDONTBUG/decoder2to4.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo4.vf,-w,R:/digital-assignment/PLSDONTBUG/memo4.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/stardecoder.vf,-w,R:/digital-assignment/PLSDONTBUG/stardecoder.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/ENTERPASS.vf,-w,R:/digital-assignment/PLSDONTBUG/ENTERPASS.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo4.vf,-w,R:/digital-assignment/PLSDONTBUG/memo4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/compare16.vf,-w,R:/digital-assignment/PLSDONTBUG/compare16.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/numbuf.vf,-w,R:/digital-assignment/PLSDONTBUG/numbuf.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/numpad.vf,-w,R:/digital-assignment/PLSDONTBUG/numpad.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/counter3.vf,-w,R:/digital-assignment/PLSDONTBUG/counter3.sch
