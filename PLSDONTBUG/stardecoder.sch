@@ -11,12 +11,6 @@
         <signal name="X(2)" />
         <signal name="X(1)" />
         <signal name="X(0)" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_12" />
-        <signal name="XLXN_13" />
         <signal name="Y(3)" />
         <signal name="Y(2)" />
         <signal name="Y(3:0)" />

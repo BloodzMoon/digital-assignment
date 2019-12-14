@@ -1,1 +1,7 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo.vf,-w,R:/digital-assignment/PLSDONTBUG/memo.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/decoder3to4.vf,-w,R:/digital-assignment/PLSDONTBUG/decoder3to4.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/ENTERPASS.vf,-w,R:/digital-assignment/PLSDONTBUG/ENTERPASS.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo4.vf,-w,R:/digital-assignment/PLSDONTBUG/memo4.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/stardecoder.vf,-w,R:/digital-assignment/PLSDONTBUG/stardecoder.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/ENTERPASS.vf,-w,R:/digital-assignment/PLSDONTBUG/ENTERPASS.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,R:/digital-assignment/PLSDONTBUG/memo4.vf,-w,R:/digital-assignment/PLSDONTBUG/memo4.sch

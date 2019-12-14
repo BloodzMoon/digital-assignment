@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="modeDecoder">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2019-12-14T17:12:12</timestamp>
+    <pin polarity="Input" x="0" y="-16" name="X(2:0)" />
+    <pin polarity="Output" x="352" y="-16" name="Y(7:0)" />
+    <pin polarity="Input" x="0" y="48" name="CLK20Mhz" />
+    <pin polarity="Input" x="0" y="112" name="EN" />
+    <pin polarity="Output" x="352" y="112" name="clrMode" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="180" y="-72" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-16" type="pin X(2:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="280" y="-16" type="pin Y(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="48" type="pin CLK20Mhz" />
+        <line x2="0" y1="48" y2="48" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="112" type="pin EN" />
+        <line x2="0" y1="112" y2="112" x1="64" />
+        <rect width="64" x="0" y="-28" height="24" />
+        <line x2="0" y1="-16" y2="-16" x1="64" />
+        <rect width="64" x="288" y="-28" height="24" />
+        <line x2="352" y1="-16" y2="-16" x1="288" />
+        <rect width="224" x="64" y="-64" height="216" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="280" y="112" type="pin clrMode" />
+        <line x2="352" y1="112" y2="112" x1="288" />
+    </graph>
+</symbol>
