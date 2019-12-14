@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym compare16 R:/digital-assignment/PLSDONTBUG/compare16.sch R:/digital-assignment/PLSDONTBUG/compare16.sym 

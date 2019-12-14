@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym stardecoder R:/digital-assignment/PLSDONTBUG/stardecoder.sch R:/digital-assignment/PLSDONTBUG/stardecoder.sym 
