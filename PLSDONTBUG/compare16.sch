@@ -204,8 +204,7 @@
     </netlist>
     <sheet sheetnum="1" width="2720" height="1760">
         <branch name="D1(15:0)">
-            <wire x2="336" y1="160" y2="160" x1="176" />
-            <wire x2="352" y1="160" y2="160" x1="336" />
+            <wire x2="352" y1="160" y2="160" x1="176" />
             <wire x2="1264" y1="160" y2="160" x1="352" />
         </branch>
         <bustap x2="352" y1="160" y2="256" x1="352" />
@@ -225,8 +224,7 @@
         <branch name="D1(15:8)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="352" y="912" type="branch" />
             <wire x2="352" y1="256" y2="336" x1="352" />
-            <wire x2="352" y1="336" y2="400" x1="352" />
-            <wire x2="352" y1="400" y2="464" x1="352" />
+            <wire x2="352" y1="336" y2="464" x1="352" />
             <wire x2="352" y1="464" y2="592" x1="352" />
             <wire x2="352" y1="592" y2="720" x1="352" />
             <wire x2="352" y1="720" y2="912" x1="352" />
@@ -350,8 +348,7 @@
         <iomarker fontsize="28" x="176" y="160" name="D1(15:0)" orien="R180" />
         <branch name="D2(15:0)">
             <wire x2="224" y1="80" y2="80" x1="176" />
-            <wire x2="256" y1="80" y2="80" x1="224" />
-            <wire x2="1104" y1="80" y2="80" x1="256" />
+            <wire x2="1104" y1="80" y2="80" x1="224" />
         </branch>
         <iomarker fontsize="28" x="176" y="80" name="D2(15:0)" orien="R180" />
         <bustap x2="1104" y1="80" y2="176" x1="1104" />
@@ -389,11 +386,7 @@
         <bustap x2="320" y1="1536" y2="1536" x1="224" />
         <branch name="D2(15)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="464" y="400" type="branch" />
-            <wire x2="336" y1="400" y2="400" x1="320" />
-            <wire x2="336" y1="368" y2="400" x1="336" />
-            <wire x2="416" y1="368" y2="368" x1="336" />
-            <wire x2="416" y1="368" y2="400" x1="416" />
-            <wire x2="464" y1="400" y2="400" x1="416" />
+            <wire x2="464" y1="400" y2="400" x1="320" />
             <wire x2="592" y1="400" y2="400" x1="464" />
         </branch>
         <branch name="D2(14)">

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : numBCD.vf
-// /___/   /\     Timestamp : 12/15/2019 01:26:28
+// /___/   /\     Timestamp : 12/15/2019 17:03:36
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -144,7 +144,7 @@ module numBCD(Col,
                  .I1(XLXN_59), 
                  .I2(XLXN_60), 
                  .O(BCD[2]));
-   (* HU_SET = "XLXI_114_4" *) 
+   (* HU_SET = "XLXI_114_0" *) 
    OR6_HXILINX_numBCD  XLXI_114 (.I0(XLXN_73), 
                                 .I1(XLXN_74), 
                                 .I2(XLXN_75), 

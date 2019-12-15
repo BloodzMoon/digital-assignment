@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : mux4.vf
+// /___/   /\     Timestamp : 12/15/2019 17:03:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/mux4.vf -w R:/digital-assignment/PLSDONTBUG/mux4.sch
+//Design Name: mux4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module mux4(A, 
+            B, 
+            C, 
+            D, 
+            SEL0, 
+            SEL1, 
+            Y);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input SEL0;
+    input SEL1;
+   output Y;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   AND3B2  XLXI_1 (.I0(SEL1), 
+                  .I1(SEL0), 
+                  .I2(A), 
+                  .O(XLXN_13));
+   AND3B1  XLXI_2 (.I0(SEL0), 
+                  .I1(SEL1), 
+                  .I2(B), 
+                  .O(XLXN_14));
+   AND3B1  XLXI_3 (.I0(SEL1), 
+                  .I1(SEL0), 
+                  .I2(C), 
+                  .O(XLXN_15));
+   AND3  XLXI_4 (.I0(SEL1), 
+                .I1(SEL0), 
+                .I2(D), 
+                .O(XLXN_16));
+   OR4  XLXI_5 (.I0(XLXN_16), 
+               .I1(XLXN_15), 
+               .I2(XLXN_14), 
+               .I3(XLXN_13), 
+               .O(Y));
+endmodule

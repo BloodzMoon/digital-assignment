@@ -13,8 +13,8 @@
         <signal name="XLXN_18" />
         <signal name="END" />
         <signal name="mode(1:0)" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
+        <signal name="mode(1)" />
+        <signal name="mode(0)" />
         <port polarity="Input" name="EN" />
         <port polarity="Input" name="TTL" />
         <port polarity="Output" name="END" />
@@ -79,11 +79,11 @@
         </block>
         <block symbolname="inv" name="XLXI_12">
             <blockpin signalname="END" name="I" />
-            <blockpin signalname="XLXN_26" name="O" />
+            <blockpin signalname="mode(1)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_13">
             <blockpin signalname="END" name="I" />
-            <blockpin signalname="XLXN_27" name="O" />
+            <blockpin signalname="mode(0)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="1760" height="1360">
@@ -141,11 +141,15 @@
         </branch>
         <bustap x2="1392" y1="1024" y2="1024" x1="1488" />
         <bustap x2="1392" y1="1088" y2="1088" x1="1488" />
-        <branch name="XLXN_26">
-            <wire x2="1392" y1="1024" y2="1024" x1="1360" />
+        <branch name="mode(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1376" y="1024" type="branch" />
+            <wire x2="1376" y1="1024" y2="1024" x1="1360" />
+            <wire x2="1392" y1="1024" y2="1024" x1="1376" />
         </branch>
-        <branch name="XLXN_27">
-            <wire x2="1392" y1="1088" y2="1088" x1="1360" />
+        <branch name="mode(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1376" y="1088" type="branch" />
+            <wire x2="1376" y1="1088" y2="1088" x1="1360" />
+            <wire x2="1392" y1="1088" y2="1088" x1="1376" />
         </branch>
         <iomarker fontsize="28" x="144" y="464" name="EN" orien="R180" />
         <iomarker fontsize="28" x="160" y="736" name="TTL" orien="R180" />

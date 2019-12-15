@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : encoder4to2.vf
+// /___/   /\     Timestamp : 12/15/2019 17:03:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/encoder4to2.vf -w R:/digital-assignment/PLSDONTBUG/encoder4to2.sch
+//Design Name: encoder4to2
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module encoder4to2(Y0, 
+                   Y1, 
+                   Y2, 
+                   Y3, 
+                   X0, 
+                   X1);
+
+    input Y0;
+    input Y1;
+    input Y2;
+    input Y3;
+   output X0;
+   output X1;
+   
+   
+   AND2B2  XLXI_1 (.I0(Y2), 
+                  .I1(Y3), 
+                  .O(X1));
+   AND2B2  XLXI_2 (.I0(Y1), 
+                  .I1(Y3), 
+                  .O(X0));
+endmodule

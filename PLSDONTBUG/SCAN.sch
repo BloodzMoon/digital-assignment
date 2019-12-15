@@ -18,20 +18,21 @@
         <signal name="Dout(11:8)" />
         <signal name="Dout(7:4)" />
         <signal name="Dout(3:0)" />
-        <signal name="XLXN_18" />
         <signal name="mode(1:0)" />
         <signal name="mode(1)" />
         <signal name="mode(0)" />
-        <signal name="CLR" />
         <signal name="END" />
+        <signal name="CLR" />
+        <signal name="CLRmemo" />
         <port polarity="Input" name="EN" />
         <port polarity="Input" name="isPressed" />
         <port polarity="Input" name="CLK20Mhz" />
         <port polarity="Input" name="Data(3:0)" />
         <port polarity="Output" name="Dout(15:0)" />
         <port polarity="Output" name="mode(1:0)" />
-        <port polarity="Input" name="CLR" />
         <port polarity="Output" name="END" />
+        <port polarity="Input" name="CLR" />
+        <port polarity="Input" name="CLRmemo" />
         <blockdef name="memo4">
             <timestamp>2019-11-29T16:18:11</timestamp>
             <rect width="352" x="0" y="-256" height="256" />
@@ -78,7 +79,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="decoder3to4">
-            <timestamp>2019-12-14T5:42:24</timestamp>
+            <timestamp>2019-12-15T9:6:46</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -109,7 +110,7 @@
             <blockpin signalname="Dout(3:0)" name="Q0(3:0)" />
             <blockpin signalname="Data(3:0)" name="P(3:0)" />
             <blockpin signalname="CLK20Mhz" name="C" />
-            <blockpin signalname="CLR" name="CLR" />
+            <blockpin signalname="CLRmemo" name="CLR" />
             <blockpin signalname="XLXN_7(3:0)" name="SEL(3:0)" />
         </block>
         <block symbolname="and2" name="XLXI_2">
@@ -120,7 +121,7 @@
         <block symbolname="counterTO4" name="XLXI_4">
             <blockpin signalname="XLXN_5" name="C" />
             <blockpin signalname="CLR" name="CLR" />
-            <blockpin signalname="XLXN_18" name="TC" />
+            <blockpin signalname="END" name="TC" />
             <blockpin signalname="XLXN_6(2:0)" name="Q(2:0)" />
         </block>
         <block symbolname="decoder3to4" name="XLXI_5">
@@ -128,16 +129,12 @@
             <blockpin signalname="XLXN_7(3:0)" name="Y(3:0)" />
         </block>
         <block symbolname="inv" name="XLXI_6">
-            <blockpin signalname="XLXN_18" name="I" />
+            <blockpin signalname="END" name="I" />
             <blockpin signalname="mode(1)" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_8">
-            <blockpin signalname="XLXN_18" name="I" />
+            <blockpin signalname="END" name="I" />
             <blockpin signalname="mode(0)" name="O" />
-        </block>
-        <block symbolname="buf" name="XLXI_9">
-            <blockpin signalname="XLXN_18" name="I" />
-            <blockpin signalname="END" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="2720" height="1760">
@@ -230,20 +227,7 @@
             <wire x2="2080" y1="1456" y2="1456" x1="2064" />
             <wire x2="2144" y1="1456" y2="1456" x1="2080" />
         </branch>
-        <branch name="CLR">
-            <wire x2="560" y1="1184" y2="1184" x1="320" />
-            <wire x2="1952" y1="1184" y2="1184" x1="560" />
-            <wire x2="656" y1="1024" y2="1024" x1="560" />
-            <wire x2="560" y1="1024" y2="1184" x1="560" />
-            <wire x2="1952" y1="1136" y2="1184" x1="1952" />
-        </branch>
-        <iomarker fontsize="28" x="320" y="1184" name="CLR" orien="R180" />
-        <instance x="1840" y="1664" name="XLXI_9" orien="R0" />
         <branch name="END">
-            <wire x2="2096" y1="1632" y2="1632" x1="2064" />
-        </branch>
-        <iomarker fontsize="28" x="2096" y="1632" name="END" orien="R0" />
-        <branch name="XLXN_18">
             <wire x2="1104" y1="960" y2="960" x1="1040" />
             <wire x2="1104" y1="960" y2="1328" x1="1104" />
             <wire x2="1840" y1="1328" y2="1328" x1="1104" />
@@ -251,6 +235,20 @@
             <wire x2="1840" y1="1456" y2="1456" x1="1104" />
             <wire x2="1104" y1="1456" y2="1632" x1="1104" />
             <wire x2="1840" y1="1632" y2="1632" x1="1104" />
+            <wire x2="2064" y1="1632" y2="1632" x1="1840" />
+            <wire x2="2096" y1="1632" y2="1632" x1="2064" />
         </branch>
+        <iomarker fontsize="28" x="2096" y="1632" name="END" orien="R0" />
+        <branch name="CLR">
+            <wire x2="576" y1="1184" y2="1184" x1="240" />
+            <wire x2="656" y1="1024" y2="1024" x1="576" />
+            <wire x2="576" y1="1024" y2="1184" x1="576" />
+        </branch>
+        <branch name="CLRmemo">
+            <wire x2="1952" y1="1248" y2="1248" x1="240" />
+            <wire x2="1952" y1="1136" y2="1248" x1="1952" />
+        </branch>
+        <iomarker fontsize="28" x="240" y="1184" name="CLR" orien="R180" />
+        <iomarker fontsize="28" x="240" y="1248" name="CLRmemo" orien="R180" />
     </sheet>
 </drawing>

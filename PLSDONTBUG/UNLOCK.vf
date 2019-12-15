@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : UNLOCK.vf
+// /___/   /\     Timestamp : 12/15/2019 17:03:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/UNLOCK.vf -w R:/digital-assignment/PLSDONTBUG/UNLOCK.sch
+//Design Name: UNLOCK
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module UNLOCK(EN, 
+              TTL, 
+              END, 
+              mode);
+
+    input EN;
+    input TTL;
+   output END;
+   output [1:0] mode;
+   
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_18;
+   wire END_DUMMY;
+   
+   assign END = END_DUMMY;
+   AND2  XLXI_2 (.I0(TTL), 
+                .I1(EN), 
+                .O(XLXN_3));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(XLXN_3), 
+              .D(XLXN_5), 
+              .Q(XLXN_18));
+   INV  XLXI_4 (.I(XLXN_18), 
+               .O(XLXN_5));
+   AND2B1  XLXI_11 (.I0(TTL), 
+                   .I1(XLXN_18), 
+                   .O(END_DUMMY));
+   INV  XLXI_12 (.I(END_DUMMY), 
+                .O(mode[1]));
+   INV  XLXI_13 (.I(END_DUMMY), 
+                .O(mode[0]));
+endmodule

@@ -1,0 +1,51 @@
+
+
+NET "arduiData[3]" LOC = P100;
+NET "arduiData[2]" LOC = P101;
+NET "arduiData[1]" LOC = P102;
+NET "arduiData[0]" LOC = P104;
+
+# PlanAhead Generated physical constraints 
+
+NET "arduiStar[2]" LOC = P105;
+NET "arduiStar[1]" LOC = P111;
+NET "arduiStar[0]" LOC = P112;
+
+NET "NumIN[0]" LOC = P137; 
+NET "NumIN[1]" LOC = P133; 
+NET "NumIN[2]" LOC = P131; 
+NET "NumIN[3]" LOC = P126; 
+NET "NumOUT[0]" LOC = P2;
+NET "NumOUT[1]" LOC = P143; 
+NET "NumOUT[2]" LOC = P141; 
+NET "NumOUT[3]" LOC = P139; 
+
+NET "OSC" LOC = P123;
+NET "arduiCLK" LOC = P99;
+
+
+# mode
+NET "p67" LOC = P67;
+NET "p74" LOC = P74;
+NET "p75" LOC = P75;
+NET "p78" LOC = P78;
+NET "p79" LOC = P79; #debug pressing A
+
+#modeOut
+NET "modeOut1" LOC = P114;
+NET "modeOut0" LOC = P115;
+
+NET "p82" LOC = P82; # arduiclk
+NET "p81" LOC = P81; # enable
+NET "p84" LOC = P84; # numpad
+
+# star
+NET "s[2]" LOC = P93;
+NET "s[1]" LOC = P94;
+NET "s[0]" LOC = P95;
+
+# bcd
+NET "bcdebug[3]" LOC = P85;
+NET "bcdebug[2]" LOC = P87;
+NET "bcdebug[1]" LOC = P88;
+NET "bcdebug[0]" LOC = P92;

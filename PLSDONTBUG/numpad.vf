@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : numpad.vf
-// /___/   /\     Timestamp : 12/15/2019 01:26:29
+// /___/   /\     Timestamp : 12/15/2019 17:03:37
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -113,13 +113,13 @@ module counter3_MUSER_numpad(CLK,
    wire bit1_DUMMY;
    
    assign bit1 = bit1_DUMMY;
-   (* HU_SET = "XLXI_1_6" *) 
+   (* HU_SET = "XLXI_1_2" *) 
    FJKC_HXILINX_numpad  XLXI_1 (.C(CLK), 
                                .CLR(CLR), 
                                .J(bit1_DUMMY), 
                                .K(bit1_DUMMY), 
                                .Q(bit0));
-   (* HU_SET = "XLXI_2_7" *) 
+   (* HU_SET = "XLXI_2_3" *) 
    FJKC_HXILINX_numpad  XLXI_2 (.C(CLK), 
                                .CLR(CLR), 
                                .J(XLXN_9), 

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym encoder4to2 R:/digital-assignment/PLSDONTBUG/encoder4to2.sch R:/digital-assignment/PLSDONTBUG/encoder4to2.sym 

@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : INCORRECT.vf
+// /___/   /\     Timestamp : 12/15/2019 17:03:38
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/INCORRECT.vf -w R:/digital-assignment/PLSDONTBUG/INCORRECT.sch
+//Design Name: INCORRECT
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module INCORRECT(CLK20Mhz, 
+                 CLR, 
+                 EN, 
+                 END, 
+                 mode);
+
+    input CLK20Mhz;
+    input CLR;
+    input EN;
+   output END;
+   output [1:0] mode;
+   
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_11;
+   
+   counterTO4  XLXI_1 (.C(XLXN_3), 
+                      .CLR(CLR), 
+                      .Q(), 
+                      .TC(XLXN_5));
+   AND2  XLXI_3 (.I0(XLXN_11), 
+                .I1(EN), 
+                .O(XLXN_3));
+   INV  XLXI_4 (.I(XLXN_5), 
+               .O(mode[1]));
+   BUF  XLXI_5 (.I(XLXN_5), 
+               .O(mode[0]));
+   BUF  XLXI_6 (.I(XLXN_5), 
+               .O(END));
+   clockdivTO1  XLXI_7 (.CLKin(CLK20Mhz), 
+                       .CLKout(XLXN_11));
+endmodule

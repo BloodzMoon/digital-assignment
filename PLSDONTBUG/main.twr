@@ -1,0 +1,232 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf main.ucf
+
+Design file:              main.ncd
+Physical constraint file: main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock OSC
+------------+------------+------------+------------+------------+-----------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                             | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)            | Phase  |
+------------+------------+------------+------------+------------+-----------------------------+--------+
+arduiData<0>|   -1.094(R)|      FAST  |    2.139(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |   -0.683(R)|      FAST  |    1.563(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |   -1.199(R)|      FAST  |    2.317(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |   -1.063(R)|      FAST  |    2.138(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+arduiData<1>|   -1.108(R)|      FAST  |    2.175(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |   -1.039(R)|      FAST  |    2.057(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |   -1.213(R)|      FAST  |    2.362(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |   -1.072(R)|      FAST  |    2.169(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+arduiData<2>|   -1.287(R)|      FAST  |    2.448(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |   -0.893(R)|      FAST  |    1.886(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |   -1.215(R)|      FAST  |    2.367(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |   -1.062(R)|      FAST  |    2.174(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+arduiData<3>|   -1.225(R)|      FAST  |    2.327(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |   -0.829(R)|      FAST  |    1.776(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |   -1.261(R)|      FAST  |    2.405(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |   -1.083(R)|      FAST  |    2.129(R)|      SLOW  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+------------+------------+------------+------------+------------+-----------------------------+--------+
+
+Clock NumIN<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+NumOUT<0>   |        11.507(R)|      SLOW  |         6.494(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<1>   |        10.929(R)|      SLOW  |         6.147(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<2>   |        11.047(R)|      SLOW  |         6.319(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<3>   |        11.185(R)|      SLOW  |         6.444(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+p84         |         9.627(F)|      SLOW  |         5.608(F)|      FAST  |XLXI_9/TC_G       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock NumIN<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+NumOUT<0>   |        11.389(R)|      SLOW  |         6.377(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<1>   |        10.811(R)|      SLOW  |         6.030(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<2>   |        10.929(R)|      SLOW  |         6.202(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<3>   |        11.067(R)|      SLOW  |         6.327(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+p84         |         9.509(F)|      SLOW  |         5.491(F)|      FAST  |XLXI_9/TC_G       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock NumIN<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+NumOUT<0>   |        11.073(R)|      SLOW  |         6.146(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<1>   |        10.495(R)|      SLOW  |         5.799(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<2>   |        10.613(R)|      SLOW  |         5.971(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<3>   |        10.751(R)|      SLOW  |         6.096(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+p84         |         9.193(F)|      SLOW  |         5.260(F)|      FAST  |XLXI_9/TC_G       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock NumIN<3> to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+NumOUT<0>   |        11.376(R)|      SLOW  |         6.435(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<1>   |        10.798(R)|      SLOW  |         6.088(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<2>   |        10.916(R)|      SLOW  |         6.260(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+NumOUT<3>   |        11.054(R)|      SLOW  |         6.385(R)|      FAST  |XLXI_5/XLXN_18    |   0.000|
+p84         |         9.496(F)|      SLOW  |         5.549(F)|      FAST  |XLXI_9/TC_G       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock OSC to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                             | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)            | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+NumOUT<0>   |         9.962(R)|      SLOW  |         5.585(R)|      FAST  |XLXI_5/XLXN_18               |   0.000|
+NumOUT<1>   |         9.384(R)|      SLOW  |         5.238(R)|      FAST  |XLXI_5/XLXN_18               |   0.000|
+NumOUT<2>   |         9.502(R)|      SLOW  |         5.410(R)|      FAST  |XLXI_5/XLXN_18               |   0.000|
+NumOUT<3>   |         9.640(R)|      SLOW  |         5.535(R)|      FAST  |XLXI_5/XLXN_18               |   0.000|
+bcdebug<0>  |        11.817(R)|      SLOW  |         6.608(R)|      FAST  |XLXI_6/XLXN_32               |   0.000|
+bcdebug<1>  |        12.255(R)|      SLOW  |         6.815(R)|      FAST  |XLXI_6/XLXN_32               |   0.000|
+bcdebug<2>  |        11.704(R)|      SLOW  |         6.611(R)|      FAST  |XLXI_6/XLXN_32               |   0.000|
+bcdebug<3>  |        12.603(R)|      SLOW  |         6.666(R)|      FAST  |XLXI_6/XLXN_32               |   0.000|
+modeOut0    |        13.539(R)|      SLOW  |         7.450(R)|      FAST  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |        13.026(R)|      SLOW  |         6.897(R)|      FAST  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |        14.192(R)|      SLOW  |         7.905(R)|      FAST  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |        13.647(R)|      SLOW  |         7.736(R)|      FAST  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+            |        12.642(R)|      SLOW  |         6.741(R)|      FAST  |XLXI_66/XLXI_4/XLXI_1/XLXN_28|   0.000|
+            |        12.277(R)|      SLOW  |         6.596(R)|      FAST  |XLXI_66/XLXI_4/XLXI_2/XLXN_28|   0.000|
+            |        13.093(R)|      SLOW  |         6.819(R)|      FAST  |XLXI_66/XLXI_4/XLXI_5/XLXN_28|   0.000|
+            |        12.520(R)|      SLOW  |         6.979(R)|      FAST  |XLXI_66/XLXI_4/XLXI_6/XLXN_28|   0.000|
+modeOut1    |        13.681(R)|      SLOW  |         7.380(R)|      FAST  |XLXI_65/XLXI_1/XLXI_1/XLXN_28|   0.000|
+            |        13.168(R)|      SLOW  |         6.827(R)|      FAST  |XLXI_65/XLXI_1/XLXI_2/XLXN_28|   0.000|
+            |        14.334(R)|      SLOW  |         7.835(R)|      FAST  |XLXI_65/XLXI_1/XLXI_5/XLXN_28|   0.000|
+            |        13.789(R)|      SLOW  |         7.666(R)|      FAST  |XLXI_65/XLXI_1/XLXI_6/XLXN_28|   0.000|
+            |        12.784(R)|      SLOW  |         6.671(R)|      FAST  |XLXI_66/XLXI_4/XLXI_1/XLXN_28|   0.000|
+            |        12.419(R)|      SLOW  |         6.526(R)|      FAST  |XLXI_66/XLXI_4/XLXI_2/XLXN_28|   0.000|
+            |        13.235(R)|      SLOW  |         6.749(R)|      FAST  |XLXI_66/XLXI_4/XLXI_5/XLXN_28|   0.000|
+            |        12.662(R)|      SLOW  |         6.909(R)|      FAST  |XLXI_66/XLXI_4/XLXI_6/XLXN_28|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------------+--------+
+
+Clock arduiCLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+modeOut0    |        11.431(R)|      SLOW  |         6.269(R)|      FAST  |XLXI_65/XLXN_5    |   0.000|
+modeOut1    |        11.019(R)|      SLOW  |         6.006(R)|      FAST  |XLXI_65/XLXN_5    |   0.000|
+p81         |        10.941(R)|      SLOW  |         5.880(R)|      FAST  |XLXI_65/XLXN_5    |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock NumIN<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+NumIN<0>       |    1.304|   -1.463|    2.425|    1.577|
+NumIN<1>       |    1.304|   -1.584|    2.425|    1.459|
+NumIN<2>       |    1.304|   -1.824|    2.425|    1.143|
+NumIN<3>       |    1.304|   -1.538|    2.425|    1.446|
+OSC            |    1.304|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock NumIN<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+NumIN<0>       |    1.304|   -1.346|    2.425|    1.695|
+NumIN<1>       |    1.304|   -1.467|    2.425|    1.577|
+NumIN<2>       |    1.304|   -1.707|    2.425|    1.261|
+NumIN<3>       |    1.304|   -1.421|    2.425|    1.564|
+OSC            |    1.304|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock NumIN<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+NumIN<0>       |    1.304|   -1.115|    2.425|    1.995|
+NumIN<1>       |    1.304|   -1.236|    2.425|    1.877|
+NumIN<2>       |    1.304|   -1.476|    2.425|    1.561|
+NumIN<3>       |    1.304|   -1.190|    2.425|    1.864|
+OSC            |    1.304|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock NumIN<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+NumIN<0>       |    1.304|   -1.404|    2.425|    1.693|
+NumIN<1>       |    1.304|   -1.525|    2.425|    1.575|
+NumIN<2>       |    1.304|   -1.765|    2.425|    1.259|
+NumIN<3>       |    1.304|   -1.479|    2.425|    1.562|
+OSC            |    1.304|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+NumIN<0>       |    2.127|   -0.379|         |         |
+NumIN<1>       |    2.127|   -0.611|         |         |
+NumIN<2>       |    2.127|   -0.587|         |         |
+NumIN<3>       |    2.127|   -0.297|         |         |
+OSC            |    4.058|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock arduiCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+arduiCLK       |    3.026|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+arduiCLK       |p82            |    7.103|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Dec 15 17:56:36 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

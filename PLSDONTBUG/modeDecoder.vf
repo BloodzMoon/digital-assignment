@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : modeDecoder.vf
+// /___/   /\     Timestamp : 12/15/2019 17:03:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/modeDecoder.vf -w R:/digital-assignment/PLSDONTBUG/modeDecoder.sch
+//Design Name: modeDecoder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module modeDecoder(EN, 
+                   X, 
+                   END, 
+                   Y);
+
+    input EN;
+    input [1:0] X;
+   output END;
+   output [3:0] Y;
+   
+   wire XLXN_69;
+   wire XLXN_74;
+   
+   AND2B2  XLXI_1 (.I0(XLXN_74), 
+                  .I1(XLXN_69), 
+                  .O(Y[3]));
+   AND2B1  XLXI_2 (.I0(XLXN_69), 
+                  .I1(XLXN_74), 
+                  .O(Y[2]));
+   AND2B1  XLXI_3 (.I0(XLXN_74), 
+                  .I1(XLXN_69), 
+                  .O(Y[1]));
+   AND2  XLXI_4 (.I0(XLXN_74), 
+                .I1(XLXN_69), 
+                .O(Y[0]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(EN), 
+               .D(X[1]), 
+               .Q(XLXN_69));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(EN), 
+               .D(X[0]), 
+               .Q(XLXN_74));
+   BUF  XLXI_38 (.I(EN), 
+                .O(END));
+endmodule
