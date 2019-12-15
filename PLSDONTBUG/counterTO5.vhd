@@ -1,36 +1,37 @@
 
+----------------------------------------------------------------------------------
+--
+-- DIGITAL ASSIGNMENT Created by: Thanyathon pornsawatchai
+-- 
+----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity counterTO5 is
-	port(
-		C: IN STD_LOGIC;
-		CLR: IN STD_LOGIC;
-		Q: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-		TC: OUT STD_LOGIC);
+	port( C: IN  STD_LOGIC;
+			CLR: IN STD_LOGIC;
+			Q  : OUT STD_LOGIC_VECTOR (2 DOWNTO 0);
+			TC : OUT STD_LOGIC);
 end counterTO5;
 
 architecture Behavioral of counterTO5 is
-	signal tmp: STD_LOGIC_VECTOR(2 DOWNTO 0) := "000";
+	constant TARGET: STD_LOGIC_VECTOR (2 DOWNTO 0) := "101";
+	signal m_Q : STD_LOGIC_VECTOR (2 DOWNTO 0) := "000";
+	signal m_TC: STD_LOGIC := '0';
 begin process( C, CLR )
 	begin
 		if CLR = '1' then
-			tmp <= "000";
+			m_Q <= "000";
+			m_TC <= '0';
 		elsif RISING_EDGE(C) then
-			case tmp is
-				when "000" => tmp <= "001";
-				when "001" => tmp <= "010";
-				when "010" => tmp <= "011";
-				when "011" => tmp <= "100";
-				when "100" => tmp <= "101";
-				when "101" => tmp <= "101";
-				when others => tmp <= "000";
-			end case;
+			if m_Q = TARGET then
+				m_Q <= m_Q;
+			else
+				m_Q <= m_Q + "001";
+			end if;
 		end if;
 	end process;
-	Q <= tmp;
-	TC <= 
-		'0' when CLR = '1' else 
-		'1' when tmp = "101";
+	Q <= m_Q;
+	TC <= '1' when m_Q = TARGET else '0';
 end Behavioral;
-

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : SCAN.vf
-// /___/   /\     Timestamp : 12/15/2019 17:03:37
+// /___/   /\     Timestamp : 12/15/2019 18:39:31
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -131,7 +131,6 @@ module SCAN(CLK20Mhz,
             EN, 
             isPressed, 
             Dout, 
-            END, 
             mode);
 
     input CLK20Mhz;
@@ -141,15 +140,14 @@ module SCAN(CLK20Mhz,
     input EN;
     input isPressed;
    output [15:0] Dout;
-   output END;
    output [1:0] mode;
    
    wire XLXN_5;
    wire [2:0] XLXN_6;
    wire [3:0] XLXN_7;
-   wire END_DUMMY;
+   wire XLXN_8;
+   wire XLXN_9;
    
-   assign END = END_DUMMY;
    memo4_MUSER_SCAN  XLXI_1 (.C(CLK20Mhz), 
                             .CLR(CLRmemo), 
                             .P(Data[3:0]), 
@@ -164,11 +162,12 @@ module SCAN(CLK20Mhz,
    counterTO4  XLXI_4 (.C(XLXN_5), 
                       .CLR(CLR), 
                       .Q(XLXN_6[2:0]), 
-                      .TC(END_DUMMY));
+                      .TC(XLXN_9));
    decoder3to4_MUSER_SCAN  XLXI_5 (.X(XLXN_6[2:0]), 
                                   .Y(XLXN_7[3:0]));
-   INV  XLXI_6 (.I(END_DUMMY), 
-               .O(mode[1]));
-   BUF  XLXI_8 (.I(END_DUMMY), 
+   BUF  XLXI_9 (.I(XLXN_9), 
                .O(mode[0]));
+   GND  XLXI_10 (.G(XLXN_8));
+   BUF  XLXI_11 (.I(XLXN_8), 
+                .O(mode[1]));
 endmodule

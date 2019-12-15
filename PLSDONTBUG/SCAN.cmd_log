@@ -3,3 +3,4 @@ sch2sym -intstyle ise -family spartan6 -w -refsym SCAN R:/digital-assignment/PLS
 sch2sym -intstyle ise -family spartan6 -w -refsym SCAN R:/digital-assignment/PLSDONTBUG/SCAN.sch R:/digital-assignment/PLSDONTBUG/SCAN.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym SCAN R:/digital-assignment/PLSDONTBUG/SCAN.sch R:/digital-assignment/PLSDONTBUG/SCAN.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym SCAN R:/digital-assignment/PLSDONTBUG/SCAN.sch R:/digital-assignment/PLSDONTBUG/SCAN.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SCAN R:/digital-assignment/PLSDONTBUG/SCAN.sch R:/digital-assignment/PLSDONTBUG/SCAN.sym 

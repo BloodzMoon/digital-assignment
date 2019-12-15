@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ENTERPASS.vf
-// /___/   /\     Timestamp : 12/15/2019 17:14:37
+// /___/   /\     Timestamp : 12/15/2019 18:41:10
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -252,7 +252,6 @@ module ENTERPASS(CLK20Mhz,
                  Data2, 
                  EN, 
                  isPressed, 
-                 END, 
                  mode, 
                  star);
 
@@ -263,18 +262,19 @@ module ENTERPASS(CLK20Mhz,
     input [15:0] Data2;
     input EN;
     input isPressed;
-   output END;
    output [1:0] mode;
    output [2:0] star;
    
    wire [15:0] d;
    wire [3:0] XLXN_2;
    wire XLXN_6;
-   wire XLXN_47;
-   wire XLXN_79;
-   wire XLXN_81;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_89;
    wire [2:0] star_DUMMY;
+   wire [1:0] mode_DUMMY;
    
+   assign mode[1:0] = mode_DUMMY[1:0];
    assign star[2:0] = star_DUMMY[2:0];
    decoder3to4_MUSER_ENTERPASS  XLXI_3 (.X(star_DUMMY[2:0]), 
                                        .Y(XLXN_2[3:0]));
@@ -291,21 +291,20 @@ module ENTERPASS(CLK20Mhz,
                 .O(XLXN_6));
    compare16_MUSER_ENTERPASS  XLXI_22 (.D1(d[15:0]), 
                                       .D2(Data2[15:0]), 
-                                      .OUTPUT(XLXN_47));
-   INV  XLXI_24 (.I(XLXN_47), 
-                .O(mode[0]));
-   BUF  XLXI_26 (.I(XLXN_47), 
-                .O(mode[1]));
+                                      .OUTPUT(XLXN_86));
    counterTO5  XLXI_29 (.C(XLXN_6), 
                        .CLR(CLR), 
                        .Q(star_DUMMY[2:0]), 
-                       .TC(XLXN_81));
+                       .TC(XLXN_89));
    AND4B2  XLXI_30 (.I0(Data[0]), 
                    .I1(Data[2]), 
                    .I2(Data[1]), 
                    .I3(Data[3]), 
-                   .O(XLXN_79));
-   AND2  XLXI_32 (.I0(XLXN_81), 
-                 .I1(XLXN_79), 
-                 .O(END));
+                   .O(XLXN_88));
+   OR2B2  XLXI_36 (.I0(mode_DUMMY[1]), 
+                  .I1(XLXN_86), 
+                  .O(mode_DUMMY[0]));
+   AND2  XLXI_38 (.I0(XLXN_89), 
+                 .I1(XLXN_88), 
+                 .O(mode_DUMMY[1]));
 endmodule

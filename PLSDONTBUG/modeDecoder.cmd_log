@@ -4,3 +4,4 @@ sch2sym -intstyle ise -family spartan6 -w -refsym modeDecoder R:/digital-assignm
 sch2sym -intstyle ise -family spartan6 -w -refsym modeDecoder R:/digital-assignment/PLSDONTBUG/modeDecoder.sch R:/digital-assignment/PLSDONTBUG/modeDecoder.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym modeDecoder R:/digital-assignment/PLSDONTBUG/modeDecoder.sch R:/digital-assignment/PLSDONTBUG/modeDecoder.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym modeDecoder R:/digital-assignment/PLSDONTBUG/modeDecoder.sch R:/digital-assignment/PLSDONTBUG/modeDecoder.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym modeDecoder R:/digital-assignment/PLSDONTBUG/modeDecoder.sch R:/digital-assignment/PLSDONTBUG/modeDecoder.sym 

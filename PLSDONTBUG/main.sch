@@ -48,10 +48,6 @@
         <signal name="p74" />
         <signal name="p75" />
         <signal name="p78" />
-        <signal name="XLXN_190" />
-        <signal name="p79" />
-        <signal name="XLXN_192" />
-        <signal name="XLXN_193" />
         <signal name="XLXN_194" />
         <signal name="XLXN_195" />
         <signal name="XLXN_196" />
@@ -101,7 +97,6 @@
         <signal name="XLXN_240" />
         <signal name="XLXN_241" />
         <signal name="XLXN_242(2:0)" />
-        <signal name="XLXN_243" />
         <signal name="modeOut1" />
         <signal name="modeOut0" />
         <signal name="XLXN_247" />
@@ -115,7 +110,6 @@
         <port polarity="Output" name="p74" />
         <port polarity="Output" name="p75" />
         <port polarity="Output" name="p78" />
-        <port polarity="Output" name="p79" />
         <port polarity="Input" name="OSC" />
         <port polarity="Output" name="bcdebug(3:0)" />
         <port polarity="Output" name="p81" />
@@ -205,24 +199,21 @@
             <circle r="12" cx="52" cy="-64" />
         </blockdef>
         <blockdef name="modeDecoder">
-            <timestamp>2019-12-15T9:52:30</timestamp>
-            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <timestamp>2019-12-15T11:25:42</timestamp>
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="320" y="-172" height="24" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="256" x="64" y="-192" height="192" />
+            <rect width="256" x="64" y="-192" height="100" />
         </blockdef>
         <blockdef name="SCAN">
-            <timestamp>2019-12-15T6:38:51</timestamp>
+            <timestamp>2019-12-15T11:18:15</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="320" y="-364" height="24" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
             <line x2="0" y1="-80" y2="-80" x1="64" />
-            <line x2="384" y1="-80" y2="-80" x1="320" />
             <line x2="0" y1="-144" y2="-144" x1="64" />
             <rect width="64" x="0" y="-364" height="24" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
@@ -231,7 +222,7 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
         </blockdef>
         <blockdef name="ENTERPASS">
-            <timestamp>2019-12-15T10:13:41</timestamp>
+            <timestamp>2019-12-15T11:40:53</timestamp>
             <line x2="0" y1="-48" y2="-48" x1="64" />
             <rect width="64" x="0" y="-428" height="24" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
@@ -244,7 +235,6 @@
             <line x2="384" y1="-416" y2="-416" x1="320" />
             <rect width="64" x="320" y="-364" height="24" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
             <line x2="0" y1="-112" y2="-112" x1="64" />
             <rect width="256" x="64" y="-448" height="464" />
         </blockdef>
@@ -258,13 +248,12 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="INCORRECT">
-            <timestamp>2019-12-14T21:53:2</timestamp>
+            <timestamp>2019-12-15T11:24:44</timestamp>
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-108" height="24" />
             <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
             <rect width="256" x="64" y="-128" height="192" />
         </blockdef>
         <blockdef name="buf">
@@ -295,21 +284,6 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-352" y2="-352" x1="320" />
-        </blockdef>
-        <blockdef name="or4">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="48" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-192" y2="-192" x1="0" />
-            <line x2="48" y1="-256" y2="-256" x1="0" />
-            <line x2="192" y1="-160" y2="-160" x1="256" />
-            <arc ex="112" ey="-208" sx="192" sy="-160" r="88" cx="116" cy="-120" />
-            <line x2="48" y1="-208" y2="-208" x1="112" />
-            <line x2="48" y1="-112" y2="-112" x1="112" />
-            <line x2="48" y1="-256" y2="-208" x1="48" />
-            <line x2="48" y1="-64" y2="-112" x1="48" />
-            <arc ex="48" ey="-208" sx="48" sy="-112" r="56" cx="16" cy="-160" />
-            <arc ex="192" ey="-160" sx="112" sy="-112" r="88" cx="116" cy="-200" />
         </blockdef>
         <block symbolname="counterTO5" name="XLXI_9">
             <blockpin signalname="XLXN_39" name="C" />
@@ -357,20 +331,17 @@
         </block>
         <block symbolname="modeDecoder" name="XLXI_49">
             <blockpin signalname="m(1:0)" name="X(1:0)" />
-            <blockpin signalname="XLXN_243" name="EN" />
             <blockpin signalname="EN(3:0)" name="Y(3:0)" />
-            <blockpin name="END" />
         </block>
         <block symbolname="SCAN" name="XLXI_65">
             <blockpin signalname="EN(3)" name="EN" />
             <blockpin signalname="arduiCLK" name="isPressed" />
             <blockpin signalname="OSC" name="CLK20Mhz" />
             <blockpin signalname="arduiData(3:0)" name="Data(3:0)" />
-            <blockpin signalname="XLXN_243" name="CLR" />
+            <blockpin name="CLR" />
             <blockpin name="CLRmemo" />
             <blockpin signalname="XLXN_232(15:0)" name="Dout(15:0)" />
             <blockpin signalname="L3(1:0)" name="mode(1:0)" />
-            <blockpin signalname="XLXN_190" name="END" />
         </block>
         <block symbolname="ENTERPASS" name="XLXI_66">
             <blockpin signalname="bcdebug(3:0)" name="Data(3:0)" />
@@ -380,22 +351,20 @@
             <blockpin signalname="XLXN_232(15:0)" name="Data2(15:0)" />
             <blockpin name="CLRmemo" />
             <blockpin name="CLR" />
-            <blockpin signalname="L2(1:0)" name="mode(1:0)" />
             <blockpin signalname="arduiStar(2:0)" name="star(2:0)" />
-            <blockpin signalname="p79" name="END" />
+            <blockpin signalname="L2(1:0)" name="mode(1:0)" />
         </block>
         <block symbolname="UNLOCK" name="XLXI_67">
             <blockpin signalname="EN(1)" name="EN" />
             <blockpin name="TTL" />
-            <blockpin signalname="XLXN_192" name="END" />
+            <blockpin name="END" />
             <blockpin signalname="L1(1:0)" name="mode(1:0)" />
         </block>
         <block symbolname="INCORRECT" name="XLXI_68">
             <blockpin signalname="EN(0)" name="EN" />
             <blockpin signalname="OSC" name="CLK20Mhz" />
+            <blockpin name="CLR" />
             <blockpin signalname="L0(1:0)" name="mode(1:0)" />
-            <blockpin signalname="XLXN_193" name="END" />
-            <blockpin signalname="XLXN_243" name="CLR" />
         </block>
         <block symbolname="buf" name="XLXI_71">
             <blockpin signalname="arduiCLK" name="I" />
@@ -444,15 +413,8 @@
             <blockpin signalname="m(1)" name="Y" />
         </block>
         <block symbolname="buf" name="XLXI_80">
-            <blockpin signalname="XLXN_243" name="I" />
+            <blockpin name="I" />
             <blockpin signalname="p81" name="O" />
-        </block>
-        <block symbolname="or4" name="XLXI_81">
-            <blockpin signalname="XLXN_193" name="I0" />
-            <blockpin signalname="XLXN_192" name="I1" />
-            <blockpin signalname="p79" name="I2" />
-            <blockpin signalname="XLXN_190" name="I3" />
-            <blockpin signalname="XLXN_243" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_82(2:0)">
             <blockpin signalname="arduiStar(2:0)" name="I" />
@@ -649,26 +611,6 @@
         <iomarker fontsize="28" x="3088" y="1536" name="p75" orien="R270" />
         <branch name="p78">
             <wire x2="2976" y1="1760" y2="1856" x1="2976" />
-        </branch>
-        <branch name="XLXN_190">
-            <wire x2="4720" y1="1200" y2="1200" x1="4352" />
-            <wire x2="4720" y1="1200" y2="2096" x1="4720" />
-        </branch>
-        <branch name="p79">
-            <wire x2="4528" y1="1856" y2="1856" x1="4352" />
-            <wire x2="4528" y1="1856" y2="2160" x1="4528" />
-            <wire x2="4608" y1="2160" y2="2160" x1="4528" />
-            <wire x2="4720" y1="2160" y2="2160" x1="4608" />
-            <wire x2="4608" y1="2080" y2="2160" x1="4608" />
-        </branch>
-        <branch name="XLXN_192">
-            <wire x2="4528" y1="2592" y2="2592" x1="4352" />
-            <wire x2="4528" y1="2224" y2="2592" x1="4528" />
-            <wire x2="4720" y1="2224" y2="2224" x1="4528" />
-        </branch>
-        <branch name="XLXN_193">
-            <wire x2="4720" y1="3120" y2="3120" x1="4352" />
-            <wire x2="4720" y1="2288" y2="3120" x1="4720" />
         </branch>
         <instance x="3968" y="3968" name="XLXI_77" orien="R0">
         </instance>
@@ -879,7 +821,6 @@
             <wire x2="4480" y1="1792" y2="1792" x1="4416" />
             <wire x2="4416" y1="1792" y2="1904" x1="4416" />
         </branch>
-        <instance x="4720" y="2352" name="XLXI_81" orien="R0" />
         <iomarker fontsize="28" x="4480" y="1792" name="arduiStar(2:0)" orien="R0" />
         <branch name="s(2:0)">
             <wire x2="4416" y1="2128" y2="2160" x1="4416" />
@@ -888,22 +829,6 @@
         <iomarker fontsize="28" x="2976" y="1760" name="p78" orien="R270" />
         <instance x="4384" y="1904" name="XLXI_82(2:0)" orien="R90" />
         <iomarker fontsize="28" x="4416" y="2160" name="s(2:0)" orien="R90" />
-        <branch name="XLXN_243">
-            <wire x2="2224" y1="464" y2="1696" x1="2224" />
-            <wire x2="2272" y1="1696" y2="1696" x1="2224" />
-            <wire x2="2224" y1="1696" y2="1856" x1="2224" />
-            <wire x2="5200" y1="464" y2="464" x1="2224" />
-            <wire x2="5200" y1="464" y2="1296" x1="5200" />
-            <wire x2="5200" y1="1296" y2="2192" x1="5200" />
-            <wire x2="5200" y1="2192" y2="3296" x1="5200" />
-            <wire x2="3968" y1="3184" y2="3184" x1="3888" />
-            <wire x2="3888" y1="3184" y2="3296" x1="3888" />
-            <wire x2="5200" y1="3296" y2="3296" x1="3888" />
-            <wire x2="3968" y1="1248" y2="1248" x1="3904" />
-            <wire x2="3904" y1="1248" y2="1296" x1="3904" />
-            <wire x2="5200" y1="1296" y2="1296" x1="3904" />
-            <wire x2="5200" y1="2192" y2="2192" x1="4976" />
-        </branch>
         <instance x="6240" y="1440" name="XLXI_83" orien="R0" />
         <instance x="6240" y="1504" name="XLXI_84" orien="R0" />
         <branch name="modeOut1">
@@ -915,6 +840,5 @@
         </branch>
         <iomarker fontsize="28" x="6496" y="1472" name="modeOut0" orien="R0" />
         <iomarker fontsize="28" x="2448" y="960" name="bcdebug(3:0)" orien="R270" />
-        <iomarker fontsize="28" x="4608" y="2080" name="p79" orien="R270" />
     </sheet>
 </drawing>

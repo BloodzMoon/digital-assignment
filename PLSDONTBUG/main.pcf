@@ -1,15 +1,8 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Dec 15 17:56:24 2019
+// Written by: Map P.20131013 on Sun Dec 15 18:41:31 2019
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "arduiCLK" LOCATE = SITE "P99" LEVEL 1;
-COMP "modeOut0" LOCATE = SITE "P115" LEVEL 1;
-COMP "modeOut1" LOCATE = SITE "P114" LEVEL 1;
-COMP "arduiStar<0>" LOCATE = SITE "P112" LEVEL 1;
-COMP "arduiStar<1>" LOCATE = SITE "P111" LEVEL 1;
-COMP "arduiStar<2>" LOCATE = SITE "P105" LEVEL 1;
-COMP "p81" LOCATE = SITE "P81" LEVEL 1;
 COMP "p82" LOCATE = SITE "P82" LEVEL 1;
 COMP "p74" LOCATE = SITE "P74" LEVEL 1;
 COMP "p75" LOCATE = SITE "P75" LEVEL 1;
@@ -19,7 +12,6 @@ COMP "p84" LOCATE = SITE "P84" LEVEL 1;
 COMP "s<1>" LOCATE = SITE "P94" LEVEL 1;
 COMP "arduiData<0>" LOCATE = SITE "P104" LEVEL 1;
 COMP "p78" LOCATE = SITE "P78" LEVEL 1;
-COMP "p79" LOCATE = SITE "P79" LEVEL 1;
 COMP "s<2>" LOCATE = SITE "P93" LEVEL 1;
 COMP "arduiData<1>" LOCATE = SITE "P102" LEVEL 1;
 COMP "arduiData<2>" LOCATE = SITE "P101" LEVEL 1;
@@ -37,5 +29,11 @@ COMP "NumIN<1>" LOCATE = SITE "P133" LEVEL 1;
 COMP "NumIN<2>" LOCATE = SITE "P131" LEVEL 1;
 COMP "NumIN<3>" LOCATE = SITE "P126" LEVEL 1;
 COMP "OSC" LOCATE = SITE "P123" LEVEL 1;
+COMP "arduiCLK" LOCATE = SITE "P99" LEVEL 1;
+COMP "modeOut0" LOCATE = SITE "P115" LEVEL 1;
+COMP "modeOut1" LOCATE = SITE "P114" LEVEL 1;
+COMP "arduiStar<0>" LOCATE = SITE "P112" LEVEL 1;
+COMP "arduiStar<1>" LOCATE = SITE "P111" LEVEL 1;
+COMP "arduiStar<2>" LOCATE = SITE "P105" LEVEL 1;
 SCHEMATIC END;
 

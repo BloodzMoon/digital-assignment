@@ -29,7 +29,6 @@ NET "p67" LOC = P67;
 NET "p74" LOC = P74;
 NET "p75" LOC = P75;
 NET "p78" LOC = P78;
-NET "p79" LOC = P79; #debug pressing A
 
 #modeOut
 NET "modeOut1" LOC = P114;
