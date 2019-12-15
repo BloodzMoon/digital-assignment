@@ -28,7 +28,6 @@
         <signal name="mode(1:0)" />
         <signal name="mode(0)" />
         <signal name="XLXN_86" />
-        <signal name="XLXN_87" />
         <signal name="XLXN_88" />
         <signal name="XLXN_89" />
         <signal name="mode(1)" />
@@ -241,19 +240,6 @@
             <wire x2="1376" y1="1504" y2="1504" x1="976" />
         </branch>
         <iomarker fontsize="28" x="976" y="1504" name="Data2(15:0)" orien="R180" />
-        <branch name="d(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1216" type="branch" />
-            <wire x2="1296" y1="1216" y2="1440" x1="1296" />
-            <wire x2="1376" y1="1440" y2="1440" x1="1296" />
-            <wire x2="1904" y1="1216" y2="1216" x1="1296" />
-            <wire x2="2464" y1="1216" y2="1216" x1="1904" />
-            <wire x2="2416" y1="832" y2="896" x1="2416" />
-            <wire x2="2416" y1="896" y2="928" x1="2416" />
-            <wire x2="2416" y1="928" y2="960" x1="2416" />
-            <wire x2="2416" y1="960" y2="1024" x1="2416" />
-            <wire x2="2464" y1="928" y2="928" x1="2416" />
-            <wire x2="2464" y1="928" y2="1216" x1="2464" />
-        </branch>
         <branch name="star(2:0)">
             <wire x2="1168" y1="960" y2="960" x1="1072" />
             <wire x2="1216" y1="960" y2="960" x1="1168" />
@@ -358,6 +344,19 @@
             <wire x2="2096" y1="1408" y2="1440" x1="2096" />
             <wire x2="2272" y1="1440" y2="1440" x1="2096" />
             <wire x2="2352" y1="1440" y2="1440" x1="2272" />
+        </branch>
+        <branch name="d(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1216" type="branch" />
+            <wire x2="1296" y1="1216" y2="1440" x1="1296" />
+            <wire x2="1376" y1="1440" y2="1440" x1="1296" />
+            <wire x2="1904" y1="1216" y2="1216" x1="1296" />
+            <wire x2="2464" y1="1216" y2="1216" x1="1904" />
+            <wire x2="2416" y1="832" y2="896" x1="2416" />
+            <wire x2="2416" y1="896" y2="928" x1="2416" />
+            <wire x2="2416" y1="928" y2="960" x1="2416" />
+            <wire x2="2416" y1="960" y2="1024" x1="2416" />
+            <wire x2="2464" y1="928" y2="928" x1="2416" />
+            <wire x2="2464" y1="928" y2="1216" x1="2464" />
         </branch>
     </sheet>
 </drawing>

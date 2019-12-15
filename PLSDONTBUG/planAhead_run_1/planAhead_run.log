@@ -1,0 +1,113 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source R:/digital-assignment/PLSDONTBUG/pa.fromHdl.tcl
+# create_project -name PLSDONTBUG -dir "R:/digital-assignment/PLSDONTBUG/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "main.ucf" [current_fileset -constrset]
+Adding file 'R:/digital-assignment/PLSDONTBUG/main.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {memo.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {memo4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {decoder3to4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {decoder2to4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {counterTO5.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {counterTO4.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {counter3.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {compare16.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clockdivTO1.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {UNLOCK.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SCAN.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {numpad.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {numbuf.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {numBCD.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mux4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {modeDecoder.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {INCORRECT.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {ENTERPASS.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {encoder4to2.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {clockdivTO50.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {main.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top main $srcset
+# add_files [list {main.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "R:/digital-assignment/PLSDONTBUG/counterTO5.vhd" into library work
+Parsing VHDL file "R:/digital-assignment/PLSDONTBUG/counterTO4.vhd" into library work
+Parsing VHDL file "R:/digital-assignment/PLSDONTBUG/clockdivTO50.vhd" into library work
+Parsing VHDL file "R:/digital-assignment/PLSDONTBUG/clockdivTO1.vhd" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [R:/digital-assignment/PLSDONTBUG/main.ucf]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'DEBUG[10]' at site P93, Terminal DEBUG[10] cannot be placed on P93 (PAD71) because the pad is already occupied by terminal s[2] [R:/digital-assignment/PLSDONTBUG/main.ucf:57]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'DEBUG[9]' at site P94, Terminal DEBUG[9] cannot be placed on P94 (PAD70) because the pad is already occupied by terminal s[1] [R:/digital-assignment/PLSDONTBUG/main.ucf:58]
+CRITICAL WARNING: [Constraints 18-5] Cannot loc terminal 'DEBUG[8]' at site P95, Terminal DEBUG[8] cannot be placed on P95 (PAD69) because the pad is already occupied by terminal s[0] [R:/digital-assignment/PLSDONTBUG/main.ucf:59]
+Finished Parsing UCF File [R:/digital-assignment/PLSDONTBUG/main.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: eed392e0
+open_rtl_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 712.605 ; gain = 213.730
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 15 20:00:34 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

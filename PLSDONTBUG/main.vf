@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : main.vf
-// /___/   /\     Timestamp : 12/15/2019 18:41:11
+// /___/   /\     Timestamp : 12/15/2019 20:10:49
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -306,7 +306,7 @@ module compare16_MUSER_main(D1,
    XNOR2  XLXI_84 (.I0(D2[0]), 
                   .I1(D1[0]), 
                   .O(XLXN_51));
-   (* HU_SET = "XLXI_85_5" *) 
+   (* HU_SET = "XLXI_85_0" *) 
    AND16_HXILINX_main  XLXI_85 (.I0(XLXN_51), 
                                .I1(XLXN_52), 
                                .I2(XLXN_53), 
@@ -728,7 +728,7 @@ module numBCD_MUSER_main(Col,
                  .I1(XLXN_59), 
                  .I2(XLXN_60), 
                  .O(BCD[2]));
-   (* HU_SET = "XLXI_114_6" *) 
+   (* HU_SET = "XLXI_114_1" *) 
    OR6_HXILINX_main  XLXI_114 (.I0(XLXN_73), 
                               .I1(XLXN_74), 
                               .I2(XLXN_75), 
@@ -795,13 +795,13 @@ module counter3_MUSER_main(CLK,
    wire bit1_DUMMY;
    
    assign bit1 = bit1_DUMMY;
-   (* HU_SET = "XLXI_1_7" *) 
+   (* HU_SET = "XLXI_1_2" *) 
    FJKC_HXILINX_main  XLXI_1 (.C(CLK), 
                              .CLR(CLR), 
                              .J(bit1_DUMMY), 
                              .K(bit1_DUMMY), 
                              .Q(bit0));
-   (* HU_SET = "XLXI_2_8" *) 
+   (* HU_SET = "XLXI_2_3" *) 
    FJKC_HXILINX_main  XLXI_2 (.C(CLK), 
                              .CLR(CLR), 
                              .J(XLXN_9), 
@@ -867,43 +867,26 @@ module main(arduiCLK,
             NumIN, 
             OSC, 
             arduiStar, 
-            bcdebug, 
-            modeOut0, 
-            modeOut1, 
-            NumOUT, 
-            p67, 
-            p74, 
-            p75, 
-            p78, 
-            p81, 
-            p82, 
-            p84, 
-            s);
+            Dd, 
+            NumOUT);
 
     input arduiCLK;
     input [3:0] arduiData;
     input [3:0] NumIN;
     input OSC;
    output [2:0] arduiStar;
-   output [3:0] bcdebug;
-   output modeOut0;
-   output modeOut1;
+   output [15:0] Dd;
    output [3:0] NumOUT;
-   output p67;
-   output p74;
-   output p75;
-   output p78;
-   output p81;
-   output p82;
-   output p84;
-   output [2:0] s;
    
+   wire [15:0] DEBUG;
    wire [3:0] EN;
    wire [1:0] L0;
    wire [1:0] L1;
    wire [1:0] L2;
    wire [1:0] L3;
    wire [1:0] m;
+   wire qqq;
+   wire [3:0] qwq;
    wire [3:0] XLXN_7;
    wire [3:0] XLXN_8;
    wire [3:0] XLXN_12;
@@ -914,16 +897,9 @@ module main(arduiCLK,
    wire XLXN_49;
    wire XLXN_204;
    wire XLXN_205;
-   wire [15:0] XLXN_232;
-   wire p84_DUMMY;
-   wire [3:0] bcdebug_DUMMY;
    wire [3:0] NumOUT_DUMMY;
-   wire [2:0] arduiStar_DUMMY;
    
-   assign arduiStar[2:0] = arduiStar_DUMMY[2:0];
-   assign bcdebug[3:0] = bcdebug_DUMMY[3:0];
    assign NumOUT[3:0] = NumOUT_DUMMY[3:0];
-   assign p84 = p84_DUMMY;
    numpad_MUSER_main  XLXI_5 (.CLK20MHz(XLXN_49), 
                              .numIN(NumIN[3:0]), 
                              .C(XLXN_7[3:0]), 
@@ -931,25 +907,25 @@ module main(arduiCLK,
                              .R(NumOUT_DUMMY[3:0]));
    numbuf_MUSER_main  XLXI_6 (.C(XLXN_7[3:0]), 
                              .CLK20Mhz(OSC), 
-                             .pressed(p84_DUMMY), 
+                             .pressed(qqq), 
                              .R(NumOUT_DUMMY[3:0]), 
                              .Col(XLXN_12[3:0]), 
                              .Row(XLXN_8[3:0]));
    numBCD_MUSER_main  XLXI_7 (.Col(XLXN_12[3:0]), 
                              .Row(XLXN_8[3:0]), 
-                             .BCD(bcdebug_DUMMY[3:0]));
+                             .BCD(qwq[3:0]));
    clockdivTO50  XLXI_8 (.CLKin(OSC), 
                         .CLKout(XLXN_36));
    counterTO5  XLXI_9 (.C(XLXN_39), 
                       .CLR(XLXN_45), 
                       .Q(), 
-                      .TC(p84_DUMMY));
+                      .TC(qqq));
    AND2  XLXI_37 (.I0(XLXN_37), 
                  .I1(XLXN_36), 
                  .O(XLXN_39));
    INV  XLXI_47 (.I(XLXN_37), 
                 .O(XLXN_45));
-   AND2B1  XLXI_48 (.I0(p84_DUMMY), 
+   AND2B1  XLXI_48 (.I0(qqq), 
                    .I1(OSC), 
                    .O(XLXN_49));
    modeDecoder_MUSER_main  XLXI_49 (.X(m[1:0]), 
@@ -960,17 +936,17 @@ module main(arduiCLK,
                             .Data(arduiData[3:0]), 
                             .EN(EN[3]), 
                             .isPressed(arduiCLK), 
-                            .Dout(XLXN_232[15:0]), 
+                            .Dout(DEBUG[15:0]), 
                             .mode(L3[1:0]));
    ENTERPASS_MUSER_main  XLXI_66 (.CLK20Mhz(OSC), 
                                  .CLR(), 
                                  .CLRmemo(), 
-                                 .Data(bcdebug_DUMMY[3:0]), 
-                                 .Data2(XLXN_232[15:0]), 
+                                 .Data(qwq[3:0]), 
+                                 .Data2(DEBUG[15:0]), 
                                  .EN(EN[2]), 
-                                 .isPressed(p84_DUMMY), 
+                                 .isPressed(qqq), 
                                  .mode(L2[1:0]), 
-                                 .star(arduiStar_DUMMY[2:0]));
+                                 .star(arduiStar[2:0]));
    UNLOCK_MUSER_main  XLXI_67 (.EN(EN[1]), 
                               .TTL(), 
                               .END(), 
@@ -979,16 +955,6 @@ module main(arduiCLK,
                                  .CLR(), 
                                  .EN(EN[0]), 
                                  .mode(L0[1:0]));
-   BUF  XLXI_71 (.I(arduiCLK), 
-                .O(p82));
-   BUF  XLXI_72 (.I(EN[3]), 
-                .O(p67));
-   BUF  XLXI_73 (.I(EN[2]), 
-                .O(p74));
-   BUF  XLXI_74 (.I(EN[1]), 
-                .O(p75));
-   BUF  XLXI_75 (.I(EN[0]), 
-                .O(p78));
    encoder4to2_MUSER_main  XLXI_77 (.Y0(EN[0]), 
                                    .Y1(EN[1]), 
                                    .Y2(EN[2]), 
@@ -1009,16 +975,36 @@ module main(arduiCLK,
                             .SEL0(XLXN_204), 
                             .SEL1(XLXN_205), 
                             .Y(m[1]));
-   BUF  XLXI_80 (.I(), 
-                .O(p81));
-   BUF  XLXI_82_0 (.I(arduiStar_DUMMY[0]), 
-                  .O(s[0]));
-   BUF  XLXI_82_1 (.I(arduiStar_DUMMY[1]), 
-                  .O(s[1]));
-   BUF  XLXI_82_2 (.I(arduiStar_DUMMY[2]), 
-                  .O(s[2]));
-   BUF  XLXI_83 (.I(m[1]), 
-                .O(modeOut1));
-   BUF  XLXI_84 (.I(m[0]), 
-                .O(modeOut0));
+   BUF  XLXI_86_0 (.I(DEBUG[0]), 
+                  .O(Dd[0]));
+   BUF  XLXI_86_1 (.I(DEBUG[1]), 
+                  .O(Dd[1]));
+   BUF  XLXI_86_2 (.I(DEBUG[2]), 
+                  .O(Dd[2]));
+   BUF  XLXI_86_3 (.I(DEBUG[3]), 
+                  .O(Dd[3]));
+   BUF  XLXI_86_4 (.I(DEBUG[4]), 
+                  .O(Dd[4]));
+   BUF  XLXI_86_5 (.I(DEBUG[5]), 
+                  .O(Dd[5]));
+   BUF  XLXI_86_6 (.I(DEBUG[6]), 
+                  .O(Dd[6]));
+   BUF  XLXI_86_7 (.I(DEBUG[7]), 
+                  .O(Dd[7]));
+   BUF  XLXI_86_8 (.I(DEBUG[8]), 
+                  .O(Dd[8]));
+   BUF  XLXI_86_9 (.I(DEBUG[9]), 
+                  .O(Dd[9]));
+   BUF  XLXI_86_10 (.I(DEBUG[10]), 
+                   .O(Dd[10]));
+   BUF  XLXI_86_11 (.I(DEBUG[11]), 
+                   .O(Dd[11]));
+   BUF  XLXI_86_12 (.I(DEBUG[12]), 
+                   .O(Dd[12]));
+   BUF  XLXI_86_13 (.I(DEBUG[13]), 
+                   .O(Dd[13]));
+   BUF  XLXI_86_14 (.I(DEBUG[14]), 
+                   .O(Dd[14]));
+   BUF  XLXI_86_15 (.I(DEBUG[15]), 
+                   .O(Dd[15]));
 endmodule

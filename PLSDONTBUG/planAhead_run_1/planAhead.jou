@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Dec 15 19:52:43 2019
+# Process ID: 44764
+# Log file: R:/digital-assignment/PLSDONTBUG/planAhead_run_1/planAhead.log
+# Journal file: R:/digital-assignment/PLSDONTBUG/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source R:/digital-assignment/PLSDONTBUG/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

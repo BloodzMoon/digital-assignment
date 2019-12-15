@@ -50,16 +50,16 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO1.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 957: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 933: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 965: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 941: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 974: Input port <arg fmt="%s" index="1">TTL</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 950: Input port <arg fmt="%s" index="1">TTL</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 978: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 954: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_65</arg>&apos;, is tied to GND.
@@ -77,10 +77,10 @@
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_68</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">943</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">919</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">974</arg>: Output port &lt;<arg fmt="%s" index="3">END</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_67</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">950</arg>: Output port &lt;<arg fmt="%s" index="3">END</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_67</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_82</arg>&apos;, is tied to GND.

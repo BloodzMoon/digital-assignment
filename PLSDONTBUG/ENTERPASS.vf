@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ENTERPASS.vf
-// /___/   /\     Timestamp : 12/15/2019 18:41:10
+// /___/   /\     Timestamp : 12/15/2019 19:55:52
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -120,7 +120,7 @@ module compare16_MUSER_ENTERPASS(D1,
    XNOR2  XLXI_84 (.I0(D2[0]), 
                   .I1(D1[0]), 
                   .O(XLXN_51));
-   (* HU_SET = "XLXI_85_4" *) 
+   (* HU_SET = "XLXI_85_17" *) 
    AND16_HXILINX_ENTERPASS  XLXI_85 (.I0(XLXN_51), 
                                     .I1(XLXN_52), 
                                     .I2(XLXN_53), 

@@ -24,27 +24,22 @@ NET "OSC" LOC = P123;
 NET "arduiCLK" LOC = P99;
 
 
-# mode
-NET "p67" LOC = P67;
-NET "p74" LOC = P74;
-NET "p75" LOC = P75;
-NET "p78" LOC = P78;
 
-#modeOut
-NET "modeOut1" LOC = P114;
-NET "modeOut0" LOC = P115;
 
-NET "p82" LOC = P82; # arduiclk
-NET "p81" LOC = P81; # enable
-NET "p84" LOC = P84; # numpad
+NET "Dd[15]" LOC = P84;
+NET "Dd[14]" LOC = P85;
+NET "Dd[13]" LOC = P87;
+NET "Dd[12]" LOC = P88;
+NET "Dd[11]" LOC = P92;
+NET "Dd[10]" LOC = P93;
+NET "Dd[9]" LOC = P94;
+NET "Dd[8]" LOC = P95;
 
-# star
-NET "s[2]" LOC = P93;
-NET "s[1]" LOC = P94;
-NET "s[0]" LOC = P95;
-
-# bcd
-NET "bcdebug[3]" LOC = P85;
-NET "bcdebug[2]" LOC = P87;
-NET "bcdebug[1]" LOC = P88;
-NET "bcdebug[0]" LOC = P92;
+NET "Dd[7]" LOC = P67;
+NET "Dd[6]" LOC = P74;
+NET "Dd[5]" LOC = P75;
+NET "Dd[4]" LOC = P78;
+NET "Dd[3]" LOC = P79;
+NET "Dd[2]" LOC = P80;
+NET "Dd[1]" LOC = P81;
+NET "Dd[0]" LOC = P82;
