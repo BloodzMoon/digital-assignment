@@ -5,7 +5,8 @@
 
 ## About this
 
-Just my digital project. Combination of *FPGA* and *TTL Circuit* making a Smart Lock container.
+Just my digital project. Combination of *FPGA*, *Arduino* and *TTL Circuit* making a Smart Lock container.
+**PROJECT ENDED**
 
 ## Credit
 
