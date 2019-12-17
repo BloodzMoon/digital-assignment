@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=R:\digital-assignment\PLSDONTBUG\main.ncd
-OUTFILE=R:\digital-assignment\PLSDONTBUG\main.bit
+INFILE=R:\digital-assignment - Copy\PLSDONTBUG\main.ncd
+OUTFILE=R:\digital-assignment - Copy\PLSDONTBUG\main.bit
 FAMILY=Spartan6
 PART=xc6slx9-3tqg144
-WORKINGDIR=R:\digital-assignment\PLSDONTBUG
+WORKINGDIR=R:\digital-assignment - Copy\PLSDONTBUG
 LICENSE=WebPack
 USER_INFO=__0_0_0

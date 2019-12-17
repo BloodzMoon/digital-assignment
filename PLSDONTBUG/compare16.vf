@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : compare16.vf
-// /___/   /\     Timestamp : 12/15/2019 19:55:46
+// /___/   /\     Timestamp : 12/16/2019 00:00:16
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -120,7 +120,7 @@ module compare16(D1,
    XNOR2  XLXI_84 (.I0(D2[0]), 
                   .I1(D1[0]), 
                   .O(XLXN_51));
-   (* HU_SET = "XLXI_85_1" *) 
+   (* HU_SET = "XLXI_85_10" *) 
    AND16_HXILINX_compare16  XLXI_85 (.I0(XLXN_51), 
                                     .I1(XLXN_52), 
                                     .I2(XLXN_53), 

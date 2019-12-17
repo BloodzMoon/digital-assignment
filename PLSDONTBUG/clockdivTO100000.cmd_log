@@ -1,0 +1,2 @@
+vhdtdtfi -lib work clockdivTO1000000.vhd -prj PLSDONTBUG -o clockdivTO100000.spl -module clockdivTO100000 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w clockdivTO100000.spl R:/digital-assignment/PLSDONTBUG/clockdivTO100000.sym 

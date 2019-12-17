@@ -1,0 +1,121 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : comSEL.vf
+// /___/   /\     Timestamp : 12/16/2019 00:00:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/comSEL.vf -w R:/digital-assignment/PLSDONTBUG/comSEL.sch
+//Design Name: comSEL
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_comSEL(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter3_MUSER_comSEL(CLK, 
+                             CLR, 
+                             bit0, 
+                             bit1);
+
+    input CLK;
+    input CLR;
+   output bit0;
+   output bit1;
+   
+   wire XLXN_9;
+   wire bit1_DUMMY;
+   
+   assign bit1 = bit1_DUMMY;
+   (* HU_SET = "XLXI_1_21" *) 
+   FJKC_HXILINX_comSEL  XLXI_1 (.C(CLK), 
+                               .CLR(CLR), 
+                               .J(bit1_DUMMY), 
+                               .K(bit1_DUMMY), 
+                               .Q(bit0));
+   (* HU_SET = "XLXI_2_22" *) 
+   FJKC_HXILINX_comSEL  XLXI_2 (.C(CLK), 
+                               .CLR(CLR), 
+                               .J(XLXN_9), 
+                               .K(XLXN_9), 
+                               .Q(bit1_DUMMY));
+   VCC  XLXI_3 (.P(XLXN_9));
+endmodule
+`timescale 1ns / 1ps
+
+module comSEL(CLK, 
+              COM0, 
+              COM1, 
+              COM2, 
+              COM3);
+
+    input CLK;
+   output COM0;
+   output COM1;
+   output COM2;
+   output COM3;
+   
+   wire SEL0;
+   wire SEL1;
+   
+   OR2B1  XLXI_2 (.I0(SEL1), 
+                 .I1(SEL0), 
+                 .O(COM1));
+   OR2B2  XLXI_4 (.I0(SEL1), 
+                 .I1(SEL0), 
+                 .O(COM3));
+   OR2  XLXI_22 (.I0(SEL1), 
+                .I1(SEL0), 
+                .O(COM0));
+   OR2B1  XLXI_26 (.I0(SEL0), 
+                  .I1(SEL1), 
+                  .O(COM2));
+   counter3_MUSER_comSEL  XLXI_28 (.CLK(CLK), 
+                                  .CLR(), 
+                                  .bit0(SEL0), 
+                                  .bit1(SEL1));
+endmodule

@@ -9,7 +9,7 @@ entity clockdivTO50 is
 end clockdivTO50;
 
 architecture Behavioral of clockdivTO50 is
-	signal TARGET: INTEGER := 50; ---- <<< Enter Frequency(Hz) that you want here!!
+	signal TARGET: INTEGER := 15; ---- <<< Enter Frequency(Hz) that you want here!!
 	signal DEFAULT: INTEGER := 20000000; ---- <<< Enter CLK input frequency(Hz)
 	signal FLAG: INTEGER := DEFAULT/TARGET;
 	signal count: INTEGER := 1;

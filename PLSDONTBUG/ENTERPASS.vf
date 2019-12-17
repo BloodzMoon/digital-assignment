@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ENTERPASS.vf
-// /___/   /\     Timestamp : 12/15/2019 19:55:52
+// /___/   /\     Timestamp : 12/16/2019 00:00:19
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -120,7 +120,7 @@ module compare16_MUSER_ENTERPASS(D1,
    XNOR2  XLXI_84 (.I0(D2[0]), 
                   .I1(D1[0]), 
                   .O(XLXN_51));
-   (* HU_SET = "XLXI_85_17" *) 
+   (* HU_SET = "XLXI_85_25" *) 
    AND16_HXILINX_ENTERPASS  XLXI_85 (.I0(XLXN_51), 
                                     .I1(XLXN_52), 
                                     .I2(XLXN_53), 
@@ -252,6 +252,7 @@ module ENTERPASS(CLK20Mhz,
                  Data2, 
                  EN, 
                  isPressed, 
+                 Dd, 
                  mode, 
                  star);
 
@@ -262,6 +263,7 @@ module ENTERPASS(CLK20Mhz,
     input [15:0] Data2;
     input EN;
     input isPressed;
+   output [15:0] Dd;
    output [1:0] mode;
    output [2:0] star;
    
@@ -307,4 +309,36 @@ module ENTERPASS(CLK20Mhz,
    AND2  XLXI_38 (.I0(XLXN_89), 
                  .I1(XLXN_88), 
                  .O(mode_DUMMY[1]));
+   BUF  XLXI_39_0 (.I(d[0]), 
+                  .O(Dd[0]));
+   BUF  XLXI_39_1 (.I(d[1]), 
+                  .O(Dd[1]));
+   BUF  XLXI_39_2 (.I(d[2]), 
+                  .O(Dd[2]));
+   BUF  XLXI_39_3 (.I(d[3]), 
+                  .O(Dd[3]));
+   BUF  XLXI_39_4 (.I(d[4]), 
+                  .O(Dd[4]));
+   BUF  XLXI_39_5 (.I(d[5]), 
+                  .O(Dd[5]));
+   BUF  XLXI_39_6 (.I(d[6]), 
+                  .O(Dd[6]));
+   BUF  XLXI_39_7 (.I(d[7]), 
+                  .O(Dd[7]));
+   BUF  XLXI_39_8 (.I(d[8]), 
+                  .O(Dd[8]));
+   BUF  XLXI_39_9 (.I(d[9]), 
+                  .O(Dd[9]));
+   BUF  XLXI_39_10 (.I(d[10]), 
+                   .O(Dd[10]));
+   BUF  XLXI_39_11 (.I(d[11]), 
+                   .O(Dd[11]));
+   BUF  XLXI_39_12 (.I(d[12]), 
+                   .O(Dd[12]));
+   BUF  XLXI_39_13 (.I(d[13]), 
+                   .O(Dd[13]));
+   BUF  XLXI_39_14 (.I(d[14]), 
+                   .O(Dd[14]));
+   BUF  XLXI_39_15 (.I(d[15]), 
+                   .O(Dd[15]));
 endmodule

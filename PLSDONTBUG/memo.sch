@@ -15,11 +15,11 @@
         <signal name="P(3)" />
         <signal name="P(1)" />
         <signal name="P(0)" />
-        <signal name="Q(3:0)" />
         <signal name="Q(3)" />
         <signal name="Q(2)" />
         <signal name="Q(1)" />
         <signal name="Q(0)" />
+        <signal name="Q(3:0)" />
         <port polarity="Input" name="CLR" />
         <port polarity="Input" name="EN" />
         <port polarity="Input" name="C" />
@@ -160,28 +160,18 @@
             <wire x2="2080" y1="864" y2="864" x1="2048" />
         </branch>
         <bustap x2="2048" y1="464" y2="560" x1="2048" />
-        <branch name="Q(3:0)">
-            <wire x2="1264" y1="688" y2="688" x1="656" />
-            <wire x2="1856" y1="688" y2="688" x1="1264" />
-            <wire x2="2480" y1="688" y2="688" x1="1856" />
-            <wire x2="2544" y1="688" y2="688" x1="2480" />
-        </branch>
-        <iomarker fontsize="28" x="2544" y="688" name="Q(3:0)" orien="R0" />
-        <bustap x2="656" y1="688" y2="784" x1="656" />
         <branch name="Q(3)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="656" y="800" type="branch" />
             <wire x2="656" y1="864" y2="864" x1="640" />
             <wire x2="656" y1="784" y2="800" x1="656" />
             <wire x2="656" y1="800" y2="864" x1="656" />
         </branch>
-        <bustap x2="1264" y1="688" y2="784" x1="1264" />
         <branch name="Q(2)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1264" y="800" type="branch" />
             <wire x2="1264" y1="864" y2="864" x1="1248" />
             <wire x2="1264" y1="784" y2="800" x1="1264" />
             <wire x2="1264" y1="800" y2="864" x1="1264" />
         </branch>
-        <bustap x2="1856" y1="688" y2="784" x1="1856" />
         <branch name="Q(1)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="800" type="branch" />
             <wire x2="1856" y1="864" y2="864" x1="1840" />
@@ -189,12 +179,22 @@
             <wire x2="1856" y1="800" y2="816" x1="1856" />
             <wire x2="1856" y1="816" y2="864" x1="1856" />
         </branch>
-        <bustap x2="2480" y1="688" y2="784" x1="2480" />
         <branch name="Q(0)">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="800" type="branch" />
             <wire x2="2480" y1="864" y2="864" x1="2464" />
             <wire x2="2480" y1="784" y2="800" x1="2480" />
             <wire x2="2480" y1="800" y2="864" x1="2480" />
+        </branch>
+        <iomarker fontsize="28" x="2544" y="688" name="Q(3:0)" orien="R0" />
+        <bustap x2="2480" y1="688" y2="784" x1="2480" />
+        <bustap x2="1856" y1="688" y2="784" x1="1856" />
+        <bustap x2="1264" y1="688" y2="784" x1="1264" />
+        <bustap x2="656" y1="688" y2="784" x1="656" />
+        <branch name="Q(3:0)">
+            <wire x2="1264" y1="688" y2="688" x1="656" />
+            <wire x2="1856" y1="688" y2="688" x1="1264" />
+            <wire x2="2480" y1="688" y2="688" x1="1856" />
+            <wire x2="2544" y1="688" y2="688" x1="2480" />
         </branch>
     </sheet>
 </drawing>

@@ -1,0 +1,184 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : dataSEL.vf
+// /___/   /\     Timestamp : 12/16/2019 00:00:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog R:/digital-assignment/PLSDONTBUG/dataSEL.vf -w R:/digital-assignment/PLSDONTBUG/dataSEL.sch
+//Design Name: dataSEL
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_dataSEL(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module mux4_MUSER_dataSEL(A, 
+                          B, 
+                          C, 
+                          D, 
+                          SEL0, 
+                          SEL1, 
+                          Y);
+
+    input A;
+    input B;
+    input C;
+    input D;
+    input SEL0;
+    input SEL1;
+   output Y;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   AND3B2  XLXI_1 (.I0(SEL1), 
+                  .I1(SEL0), 
+                  .I2(A), 
+                  .O(XLXN_13));
+   AND3B1  XLXI_2 (.I0(SEL0), 
+                  .I1(SEL1), 
+                  .I2(B), 
+                  .O(XLXN_14));
+   AND3B1  XLXI_3 (.I0(SEL1), 
+                  .I1(SEL0), 
+                  .I2(C), 
+                  .O(XLXN_15));
+   AND3  XLXI_4 (.I0(SEL1), 
+                .I1(SEL0), 
+                .I2(D), 
+                .O(XLXN_16));
+   OR4  XLXI_5 (.I0(XLXN_16), 
+               .I1(XLXN_15), 
+               .I2(XLXN_14), 
+               .I3(XLXN_13), 
+               .O(Y));
+endmodule
+`timescale 1ns / 1ps
+
+module counter3_MUSER_dataSEL(CLK, 
+                              CLR, 
+                              bit0, 
+                              bit1);
+
+    input CLK;
+    input CLR;
+   output bit0;
+   output bit1;
+   
+   wire XLXN_9;
+   wire bit1_DUMMY;
+   
+   assign bit1 = bit1_DUMMY;
+   (* HU_SET = "XLXI_1_23" *) 
+   FJKC_HXILINX_dataSEL  XLXI_1 (.C(CLK), 
+                                .CLR(CLR), 
+                                .J(bit1_DUMMY), 
+                                .K(bit1_DUMMY), 
+                                .Q(bit0));
+   (* HU_SET = "XLXI_2_24" *) 
+   FJKC_HXILINX_dataSEL  XLXI_2 (.C(CLK), 
+                                .CLR(CLR), 
+                                .J(XLXN_9), 
+                                .K(XLXN_9), 
+                                .Q(bit1_DUMMY));
+   VCC  XLXI_3 (.P(XLXN_9));
+endmodule
+`timescale 1ns / 1ps
+
+module dataSEL(CLK, 
+               digit, 
+               b0, 
+               b1, 
+               b2, 
+               b3);
+
+    input CLK;
+    input [15:0] digit;
+   output b0;
+   output b1;
+   output b2;
+   output b3;
+   
+   wire XLXN_71;
+   wire XLXN_74;
+   
+   counter3_MUSER_dataSEL  XLXI_19 (.CLK(CLK), 
+                                   .CLR(), 
+                                   .bit0(XLXN_71), 
+                                   .bit1(XLXN_74));
+   mux4_MUSER_dataSEL  XLXI_23 (.A(digit[15]), 
+                               .B(digit[11]), 
+                               .C(digit[7]), 
+                               .D(digit[3]), 
+                               .SEL0(XLXN_71), 
+                               .SEL1(XLXN_74), 
+                               .Y(b3));
+   mux4_MUSER_dataSEL  XLXI_24 (.A(digit[14]), 
+                               .B(digit[10]), 
+                               .C(digit[6]), 
+                               .D(digit[2]), 
+                               .SEL0(XLXN_71), 
+                               .SEL1(XLXN_74), 
+                               .Y(b2));
+   mux4_MUSER_dataSEL  XLXI_25 (.A(digit[13]), 
+                               .B(digit[9]), 
+                               .C(digit[5]), 
+                               .D(digit[1]), 
+                               .SEL0(XLXN_71), 
+                               .SEL1(XLXN_74), 
+                               .Y(b1));
+   mux4_MUSER_dataSEL  XLXI_26 (.A(digit[12]), 
+                               .B(digit[8]), 
+                               .C(digit[4]), 
+                               .D(digit[0]), 
+                               .SEL0(XLXN_71), 
+                               .SEL1(XLXN_74), 
+                               .Y(b0));
+endmodule

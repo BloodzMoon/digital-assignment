@@ -31,6 +31,7 @@
         <signal name="XLXN_88" />
         <signal name="XLXN_89" />
         <signal name="mode(1)" />
+        <signal name="Dd(15:0)" />
         <port polarity="Input" name="Data(3:0)" />
         <port polarity="Input" name="CLK20Mhz" />
         <port polarity="Input" name="EN" />
@@ -40,6 +41,7 @@
         <port polarity="Input" name="CLRmemo" />
         <port polarity="Input" name="CLR" />
         <port polarity="Output" name="mode(1:0)" />
+        <port polarity="Output" name="Dd(15:0)" />
         <blockdef name="decoder3to4">
             <timestamp>2019-12-15T9:6:46</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -129,6 +131,14 @@
             <line x2="48" y1="-144" y2="-144" x1="112" />
             <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
         </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
         <block symbolname="decoder3to4" name="XLXI_3">
             <blockpin signalname="star(2:0)" name="X(2:0)" />
             <blockpin signalname="XLXN_2(3:0)" name="Y(3:0)" />
@@ -175,6 +185,10 @@
             <blockpin signalname="XLXN_89" name="I0" />
             <blockpin signalname="XLXN_88" name="I1" />
             <blockpin signalname="mode(1)" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_39(15:0)">
+            <blockpin signalname="d(15:0)" name="I" />
+            <blockpin signalname="Dd(15:0)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="2720" height="1760">
@@ -240,6 +254,23 @@
             <wire x2="1376" y1="1504" y2="1504" x1="976" />
         </branch>
         <iomarker fontsize="28" x="976" y="1504" name="Data2(15:0)" orien="R180" />
+        <branch name="d(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1216" type="branch" />
+            <wire x2="1296" y1="1216" y2="1440" x1="1296" />
+            <wire x2="1376" y1="1440" y2="1440" x1="1296" />
+            <wire x2="1904" y1="1216" y2="1216" x1="1296" />
+            <wire x2="2464" y1="1216" y2="1216" x1="1904" />
+            <wire x2="2464" y1="1216" y2="1264" x1="2464" />
+            <wire x2="2464" y1="1264" y2="1264" x1="2368" />
+            <wire x2="2368" y1="1264" y2="1328" x1="2368" />
+            <wire x2="2432" y1="1328" y2="1328" x1="2368" />
+            <wire x2="2416" y1="832" y2="896" x1="2416" />
+            <wire x2="2416" y1="896" y2="928" x1="2416" />
+            <wire x2="2416" y1="928" y2="960" x1="2416" />
+            <wire x2="2416" y1="960" y2="1024" x1="2416" />
+            <wire x2="2464" y1="928" y2="928" x1="2416" />
+            <wire x2="2464" y1="928" y2="1216" x1="2464" />
+        </branch>
         <branch name="star(2:0)">
             <wire x2="1168" y1="960" y2="960" x1="1072" />
             <wire x2="1216" y1="960" y2="960" x1="1168" />
@@ -345,18 +376,10 @@
             <wire x2="2272" y1="1440" y2="1440" x1="2096" />
             <wire x2="2352" y1="1440" y2="1440" x1="2272" />
         </branch>
-        <branch name="d(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1216" type="branch" />
-            <wire x2="1296" y1="1216" y2="1440" x1="1296" />
-            <wire x2="1376" y1="1440" y2="1440" x1="1296" />
-            <wire x2="1904" y1="1216" y2="1216" x1="1296" />
-            <wire x2="2464" y1="1216" y2="1216" x1="1904" />
-            <wire x2="2416" y1="832" y2="896" x1="2416" />
-            <wire x2="2416" y1="896" y2="928" x1="2416" />
-            <wire x2="2416" y1="928" y2="960" x1="2416" />
-            <wire x2="2416" y1="960" y2="1024" x1="2416" />
-            <wire x2="2464" y1="928" y2="928" x1="2416" />
-            <wire x2="2464" y1="928" y2="1216" x1="2464" />
+        <instance x="2432" y="1360" name="XLXI_39(15:0)" orien="R0" />
+        <branch name="Dd(15:0)">
+            <wire x2="2688" y1="1328" y2="1328" x1="2656" />
         </branch>
+        <iomarker fontsize="28" x="2688" y="1328" name="Dd(15:0)" orien="R0" />
     </sheet>
 </drawing>

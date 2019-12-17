@@ -5,61 +5,85 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 852: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 611: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO50.vhd" Line 12: Using initial value <arg fmt="%s" index="1">50</arg> for <arg fmt="%s" index="2">target</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO50.vhd" Line 12: Using initial value <arg fmt="%s" index="1">15</arg> for <arg fmt="%s" index="2">target</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO50.vhd" Line 13: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">default</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO50.vhd" Line 13: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">default</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO50.vhd" Line 14: Using initial value <arg fmt="%s" index="1">400000</arg> for <arg fmt="%s" index="2">flag</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="new" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO50.vhd" Line 14: Using initial value <arg fmt="%s" index="1">1333333</arg> for <arg fmt="%s" index="2">flag</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO50.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO50.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO5.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO5.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO4.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO4.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO5.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO5.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="758" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO5.vhd" Line 11: Replacing existing netlist <arg fmt="%s" index="1">counterTO5</arg>(<arg fmt="%s" index="2">Behavioral</arg>)
+<msg type="warning" file="HDLCompiler" num="758" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO5.vhd" Line 11: Replacing existing netlist <arg fmt="%s" index="1">counterTO5</arg>(<arg fmt="%s" index="2">Behavioral</arg>)
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO4.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO4.vhd" Line 22: Assignment to <arg fmt="%s" index="1">m_tc</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="758" delta="old" >"R:\digital-assignment\PLSDONTBUG\counterTO4.vhd" Line 11: Replacing existing netlist <arg fmt="%s" index="1">counterTO4</arg>(<arg fmt="%s" index="2">Behavioral</arg>)
+<msg type="warning" file="HDLCompiler" num="758" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\counterTO4.vhd" Line 11: Replacing existing netlist <arg fmt="%s" index="1">counterTO4</arg>(<arg fmt="%s" index="2">Behavioral</arg>)
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO1.vhd" Line 12: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">target</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1.vhd" Line 12: Using initial value <arg fmt="%s" index="1">1</arg> for <arg fmt="%s" index="2">target</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO1.vhd" Line 13: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">default</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1.vhd" Line 13: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">default</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO1.vhd" Line 14: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">flag</arg> since it is never assigned
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1.vhd" Line 14: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">flag</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment\PLSDONTBUG\clockdivTO1.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 933: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 492: Input port <arg fmt="%s" index="1">I5</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 941: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 508: Input port <arg fmt="%s" index="1">I1</arg> is not connected on this instance
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 950: Input port <arg fmt="%s" index="1">TTL</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1000000.vhd" Line 12: Using initial value <arg fmt="%s" index="1">100000</arg> for <arg fmt="%s" index="2">target</arg> since it is never assigned
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment\PLSDONTBUG\main.vf" Line 954: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1000000.vhd" Line 13: Using initial value <arg fmt="%s" index="1">20000000</arg> for <arg fmt="%s" index="2">default</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1000000.vhd" Line 14: Using initial value <arg fmt="%s" index="1">200</arg> for <arg fmt="%s" index="2">flag</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\clockdivTO1000000.vhd" Line 22: <arg fmt="%s" index="1">count</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 248: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 179: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 1372: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 1380: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 1390: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"R:\digital-assignment - Copy\PLSDONTBUG\main.vf" Line 1394: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_65</arg>&apos;, is tied to GND.
@@ -77,19 +101,31 @@
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_68</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">919</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">950</arg>: Output port &lt;<arg fmt="%s" index="3">END</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_67</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">R:\digital-assignment - Copy\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">1358</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_9</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_82</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">R:\digital-assignment\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">187</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">R:\digital-assignment - Copy\PLSDONTBUG\main.vf</arg>&quot; line <arg fmt="%s" index="2">1015</arg>: Output port &lt;<arg fmt="%s" index="3">Q</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Y0</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">I5</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_98</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">I1</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_100</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">I6</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_100</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_19</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_28</arg>&apos;, is tied to GND.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
