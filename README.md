@@ -1,12 +1,11 @@
 
-# Digital Assignment
+# Digital Assignment 
 
-> KMITL 2019
+> KMITL 2019 (Assignment ENDED)
 
 ## About this
 
 Just my digital project. Combination of *FPGA*, *Arduino* and *TTL Circuit* making a Smart Lock container.
-**PROJECT ENDED**
 
 ## Credit
 
