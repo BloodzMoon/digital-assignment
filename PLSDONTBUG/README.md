@@ -2,6 +2,8 @@
 # FPGA-Flasher
 FPGA-Flasher For XC6SLX9
 
+I'm not the owner of FPGA-Flasher files. Just use it in my project.
+
 Download from [releases](https://github.com/ouoam/FPGA-Flasher/releases)
 
 Automate flashing XC6SLX9 from *.bit file by drag and drop function
